@@ -15,6 +15,8 @@ import jwt
 import razorpay
 import hmac
 import hashlib
+import requests
+from fastapi import Request
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -30,7 +32,11 @@ JWT_EXP_HOURS = 24 * 7
 
 RAZORPAY_KEY_ID = os.environ.get('RAZORPAY_KEY_ID')
 RAZORPAY_KEY_SECRET = os.environ.get('RAZORPAY_KEY_SECRET')
+RAZORPAY_WEBHOOK_SECRET = os.environ.get('RAZORPAY_WEBHOOK_SECRET', '')
 rzp_client = razorpay.Client(auth=(RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET)) if RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET else None
+
+RESEND_API_KEY = os.environ.get('RESEND_API_KEY', '')
+FROM_EMAIL = os.environ.get('FROM_EMAIL', 'Pipa Jewellery <onboarding@resend.dev>')
 
 app = FastAPI(title="Pipa Jewellery API")
 api_router = APIRouter(prefix="/api")
@@ -532,6 +538,8 @@ async def create_order(payload: OrderCreate, user=Depends(current_user)):
     # clear cart only for COD; for RZP we wait for verification
     if payload.payment_method != "RAZORPAY":
         await db.carts.update_one({"user_id": user['id']}, {"$set": {"items": []}}, upsert=True)
+        send_email(user['email'], f"Order confirmed — {order['order_no']}",
+                   order_email_html(order, "Order received (COD)"))
     order.pop('_id', None)
     return order
 
@@ -561,12 +569,111 @@ async def verify_razorpay(payload: RazorpayVerify, user=Depends(current_user)):
         "status": "confirmed",
     }})
     await db.carts.update_one({"user_id": user['id']}, {"$set": {"items": []}}, upsert=True)
+    order.update({"payment_status": "paid", "status": "confirmed", "razorpay_payment_id": payload.razorpay_payment_id})
+    send_email(order['user_email'], f"Payment received — Order {order['order_no']}",
+               order_email_html(order, "Payment confirmed"))
     return {"ok": True}
 
 
 @api_router.get("/payments/razorpay/key")
 async def razorpay_key():
     return {"key_id": RAZORPAY_KEY_ID or ""}
+
+
+# ------------------- Email helper -------------------
+def send_email(to_email: str, subject: str, html: str):
+    """Send via Resend. If no API key, log to backend (DEV-LOG mode)."""
+    if not RESEND_API_KEY:
+        logger.info(f"[EMAIL DEV-LOG] to={to_email} subject={subject}\n{html[:300]}...")
+        return False
+    try:
+        r = requests.post(
+            "https://api.resend.com/emails",
+            headers={"Authorization": f"Bearer {RESEND_API_KEY}", "Content-Type": "application/json"},
+            json={"from": FROM_EMAIL, "to": [to_email], "subject": subject, "html": html},
+            timeout=10,
+        )
+        if r.status_code >= 300:
+            logger.warning(f"Resend failed: {r.status_code} {r.text}")
+            return False
+        return True
+    except Exception as e:
+        logger.warning(f"Resend exception: {e}")
+        return False
+
+
+def order_email_html(order: dict, heading: str) -> str:
+    rows = "".join(
+        f"<tr><td style='padding:8px;border-bottom:1px solid #E5E0D8'>{it['name']} × {it['quantity']}</td>"
+        f"<td style='padding:8px;border-bottom:1px solid #E5E0D8;text-align:right'>₹{it['subtotal']:.0f}</td></tr>"
+        for it in order.get('items', [])
+    )
+    a = order.get('address', {})
+    return f"""
+    <div style="font-family:Outfit,Arial,sans-serif;background:#FAF8F5;padding:24px;color:#1A1A1A">
+      <div style="max-width:560px;margin:auto;background:#fff;border:1px solid #E5E0D8;padding:32px">
+        <h1 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;margin:0 0 8px;color:#B45F45">Pipa Jewellery</h1>
+        <p style="font-size:13px;color:#4A4A4A;margin:0 0 20px;letter-spacing:0.1em;text-transform:uppercase">{heading}</p>
+        <p>Hi {order.get('user_name','')},</p>
+        <p>Order <strong>{order.get('order_no')}</strong> — status: <strong>{order.get('status')}</strong>.</p>
+        <table style="width:100%;border-collapse:collapse;margin:16px 0">{rows}</table>
+        <p style="text-align:right;font-size:16px"><strong>Total: ₹{order.get('total',0):.0f}</strong></p>
+        <p style="font-size:13px;color:#4A4A4A;margin-top:24px">Shipping to: {a.get('full_name')}, {a.get('line1')}, {a.get('city')}, {a.get('state')} - {a.get('pincode')}</p>
+        <p style="font-size:12px;color:#4A4A4A;margin-top:32px">Thank you for shopping with Pipa.</p>
+      </div>
+    </div>
+    """
+
+
+# ------------------- Razorpay Webhook -------------------
+@api_router.post("/payments/razorpay/webhook")
+async def razorpay_webhook(request: Request):
+    body = await request.body()
+    signature = request.headers.get('X-Razorpay-Signature', '')
+
+    if RAZORPAY_WEBHOOK_SECRET:
+        expected = hmac.new(RAZORPAY_WEBHOOK_SECRET.encode(), body, hashlib.sha256).hexdigest()
+        if not hmac.compare_digest(expected, signature):
+            raise HTTPException(400, "Invalid signature")
+    else:
+        logger.warning("RAZORPAY_WEBHOOK_SECRET not set — accepting webhook without verification")
+
+    try:
+        payload = await request.json()
+    except Exception:
+        raise HTTPException(400, "Invalid JSON")
+
+    event = payload.get('event', '')
+    entity = (payload.get('payload', {}) or {}).get('payment', {}).get('entity', {}) or \
+             (payload.get('payload', {}) or {}).get('order', {}).get('entity', {})
+    rzp_order_id = entity.get('order_id') or entity.get('id')
+    if not rzp_order_id:
+        return {"ok": True, "skipped": True}
+
+    order = await db.orders.find_one({"razorpay_order_id": rzp_order_id})
+    if not order:
+        logger.info(f"webhook: order not found for {rzp_order_id}")
+        return {"ok": True, "unknown_order": True}
+
+    update = {}
+    if event in ("payment.captured", "order.paid"):
+        update = {"payment_status": "paid", "status": "confirmed",
+                  "razorpay_payment_id": entity.get('id', order.get('razorpay_payment_id'))}
+        # Clear cart in case verify endpoint never ran
+        await db.carts.update_one({"user_id": order['user_id']}, {"$set": {"items": []}}, upsert=True)
+    elif event == "payment.failed":
+        update = {"payment_status": "failed"}
+    elif event == "refund.processed":
+        update = {"payment_status": "refunded", "status": "cancelled"}
+
+    if update:
+        await db.orders.update_one({"id": order['id']}, {"$set": update})
+        order.update(update)
+        if update.get('payment_status') == 'paid':
+            send_email(order['user_email'], f"Payment received — Order {order['order_no']}",
+                       order_email_html(order, "Payment confirmed"))
+
+    return {"ok": True, "event": event}
 
 
 @api_router.get("/orders/mine")
@@ -588,6 +695,10 @@ async def update_order_status(oid: str, body: dict, _=Depends(current_admin)):
     r = await db.orders.update_one({"id": oid}, {"$set": {"status": new_status}})
     if r.matched_count == 0:
         raise HTTPException(404, "Order not found")
+    order = await db.orders.find_one({"id": oid}, {"_id": 0})
+    if order and new_status in ("shipped", "delivered", "cancelled"):
+        send_email(order['user_email'], f"Order {order['order_no']} {new_status}",
+                   order_email_html(order, f"Order {new_status}"))
     return {"ok": True}
 
 

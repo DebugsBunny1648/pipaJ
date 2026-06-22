@@ -50,3 +50,14 @@ Create Pipa Jewellery — a React + MongoDB jewellery e-commerce site similar to
 - ✅ Checkout shows payment-method radio: Pay Online (Razorpay UPI/Cards/Netbanking) [default] or COD. Razorpay Checkout.js modal opens on submit; cart is cleared only after server-side signature verification succeeds; order status → confirmed, payment_status → paid.
 - ✅ Test keys in `/app/backend/.env` (RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET).
 - Test cards: 4111 1111 1111 1111 (success), 5267 3181 8797 5449 (failure), CVV any 3 digits, expiry any future date.
+
+## Updates (2026-06-22, v4)
+- ✅ **Razorpay Webhook** at `POST /api/payments/razorpay/webhook`:
+  - HMAC SHA256 signature verification (`X-Razorpay-Signature` header) when `RAZORPAY_WEBHOOK_SECRET` is set; logs a warning and accepts otherwise.
+  - Handles `payment.captured`, `order.paid` → marks order paid+confirmed and clears cart.
+  - Handles `payment.failed` → marks payment_status=failed.
+  - Handles `refund.processed` → marks refunded+cancelled.
+- ✅ **Email notifications** via Resend (`POST https://api.resend.com/emails`).
+  - Triggers: order placed (COD), payment verified (Razorpay), webhook-confirmed payment, status changed to shipped/delivered/cancelled.
+  - DEV-LOG fallback: when `RESEND_API_KEY` is empty, full email is printed to backend logs (visible via `tail /var/log/supervisor/backend.err.log`).
+- env vars: `RAZORPAY_WEBHOOK_SECRET`, `RESEND_API_KEY`, `FROM_EMAIL`.
