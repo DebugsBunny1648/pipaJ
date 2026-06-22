@@ -175,6 +175,7 @@ async def signup(payload: UserSignup):
     }
     await db.users.insert_one(user)
     token = make_token(user['id'], user['role'])
+    user.pop('_id', None)
     return {"token": token, "user": {k: v for k, v in user.items() if k != 'password'}}
 
 
