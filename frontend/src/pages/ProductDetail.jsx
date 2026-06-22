@@ -91,6 +91,8 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
+
+      <ProductReviews productId={product.id} />
     </div>
   );
 };

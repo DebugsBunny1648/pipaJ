@@ -38,3 +38,9 @@ Create Pipa Jewellery — a React + MongoDB jewellery e-commerce site similar to
 - Multiple banners carousel.
 - SEO meta tags & sitemap.
 - Wishlist sharing.
+
+## Updates (2026-06-22, v2)
+- ✅ Product Reviews & Ratings (star 1-5 + comment; one per user; owner/admin delete)
+- ✅ Address Book per user (multiple, default, validation) + saved-address picker on Checkout
+- ✅ "Shop The Look" Instagram-style gallery on Home (4 seeded looks) with click-to-modal product list; admin CRUD at /admin/lookbook
+- ⏸️ Razorpay integration deferred — awaiting `rzp_test_*` Key ID and Key Secret from user.
