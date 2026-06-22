@@ -44,3 +44,9 @@ Create Pipa Jewellery — a React + MongoDB jewellery e-commerce site similar to
 - ✅ Address Book per user (multiple, default, validation) + saved-address picker on Checkout
 - ✅ "Shop The Look" Instagram-style gallery on Home (4 seeded looks) with click-to-modal product list; admin CRUD at /admin/lookbook
 - ⏸️ Razorpay integration deferred — awaiting `rzp_test_*` Key ID and Key Secret from user.
+
+## Updates (2026-06-22, v3)
+- ✅ Razorpay integration (test mode): `/api/payments/razorpay/order` (auto-created on checkout when method=RAZORPAY), `/api/payments/razorpay/verify` (HMAC SHA256 signature verification), `/api/payments/razorpay/key` (returns public key id).
+- ✅ Checkout shows payment-method radio: Pay Online (Razorpay UPI/Cards/Netbanking) [default] or COD. Razorpay Checkout.js modal opens on submit; cart is cleared only after server-side signature verification succeeds; order status → confirmed, payment_status → paid.
+- ✅ Test keys in `/app/backend/.env` (RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET).
+- Test cards: 4111 1111 1111 1111 (success), 5267 3181 8797 5449 (failure), CVV any 3 digits, expiry any future date.

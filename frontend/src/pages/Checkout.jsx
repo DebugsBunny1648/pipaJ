@@ -14,6 +14,19 @@ const Checkout = () => {
   const [loading, setLoading] = useState(false);
   const [savedAddrs, setSavedAddrs] = useState([]);
   const [selectedAddrId, setSelectedAddrId] = useState("");
+  const [paymentMethod, setPaymentMethod] = useState("RAZORPAY");
+  const [rzpKey, setRzpKey] = useState("");
+
+  useEffect(() => {
+    api.get("/payments/razorpay/key").then((r) => setRzpKey(r.data.key_id)).catch(() => {});
+    // Load Razorpay checkout script once
+    if (!document.getElementById("rzp-script")) {
+      const s = document.createElement("script");
+      s.id = "rzp-script";
+      s.src = "https://checkout.razorpay.com/v1/checkout.js";
+      document.body.appendChild(s);
+    }
+  }, []);
 
   useEffect(() => {
     api.get("/addresses").then((r) => {
@@ -67,11 +80,46 @@ const Checkout = () => {
         items: cart.map((it) => ({ product_id: it.product.id, quantity: it.quantity })),
         address: addr,
         coupon_code: appliedCode,
-        payment_method: "COD",
+        payment_method: paymentMethod,
       });
-      toast.success(`Order ${data.order_no} placed!`);
-      refresh();
-      navigate("/account");
+
+      if (paymentMethod === "COD") {
+        toast.success(`Order ${data.order_no} placed!`);
+        refresh();
+        navigate("/account");
+        return;
+      }
+
+      // Razorpay flow
+      if (!window.Razorpay) { toast.error("Razorpay still loading, try again"); setLoading(false); return; }
+      const options = {
+        key: rzpKey,
+        amount: Math.round(data.total * 100),
+        currency: "INR",
+        name: "Pipa Jewellery",
+        description: data.order_no,
+        order_id: data.razorpay_order_id,
+        prefill: { name: addr.full_name, contact: addr.phone },
+        theme: { color: "#B45F45" },
+        handler: async (resp) => {
+          try {
+            await api.post("/payments/razorpay/verify", {
+              order_id: data.id,
+              razorpay_order_id: resp.razorpay_order_id,
+              razorpay_payment_id: resp.razorpay_payment_id,
+              razorpay_signature: resp.razorpay_signature,
+            });
+            toast.success(`Payment successful — Order ${data.order_no}`);
+            refresh();
+            navigate("/account");
+          } catch (e) {
+            toast.error("Payment verification failed");
+          }
+        },
+        modal: { ondismiss: () => { setLoading(false); toast.info("Payment cancelled"); } },
+      };
+      const rp = new window.Razorpay(options);
+      rp.open();
     } catch (e) {
       toast.error(e.response?.data?.detail || "Failed to place order");
     } finally { setLoading(false); }
@@ -119,8 +167,13 @@ const Checkout = () => {
           ))}
           <div className="border border-[#E5E0D8] bg-white p-4 mt-4">
             <h3 className="font-medium mb-2">Payment Method</h3>
-            <label className="flex items-center gap-2 text-sm">
-              <input type="radio" checked readOnly /> Cash on Delivery (COD)
+            <label className="flex items-center gap-2 text-sm py-1">
+              <input data-testid="pay-razorpay" type="radio" name="pay" value="RAZORPAY" checked={paymentMethod === "RAZORPAY"} onChange={() => setPaymentMethod("RAZORPAY")} />
+              <span>Pay Online (Razorpay — UPI, Cards, Netbanking)</span>
+            </label>
+            <label className="flex items-center gap-2 text-sm py-1">
+              <input data-testid="pay-cod" type="radio" name="pay" value="COD" checked={paymentMethod === "COD"} onChange={() => setPaymentMethod("COD")} />
+              <span>Cash on Delivery (COD)</span>
             </label>
           </div>
         </div>
@@ -155,7 +208,7 @@ const Checkout = () => {
             disabled={loading}
             className="mt-5 w-full bg-[#B45F45] text-white py-3 text-xs uppercase tracking-widest hover:bg-[#9c4d36] disabled:opacity-60"
           >
-            {loading ? "Placing…" : "Place Order"}
+            {loading ? "Processing…" : paymentMethod === "RAZORPAY" ? `Pay ${inr(total)}` : "Place Order"}
           </button>
         </div>
       </div>

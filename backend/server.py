@@ -12,6 +12,9 @@ import uuid
 from datetime import datetime, timezone, timedelta
 import bcrypt
 import jwt
+import razorpay
+import hmac
+import hashlib
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -24,6 +27,10 @@ db = client[os.environ['DB_NAME']]
 JWT_SECRET = os.environ.get('JWT_SECRET', 'pipa-jewellery-secret-key-change-me')
 JWT_ALGO = 'HS256'
 JWT_EXP_HOURS = 24 * 7
+
+RAZORPAY_KEY_ID = os.environ.get('RAZORPAY_KEY_ID')
+RAZORPAY_KEY_SECRET = os.environ.get('RAZORPAY_KEY_SECRET')
+rzp_client = razorpay.Client(auth=(RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET)) if RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET else None
 
 app = FastAPI(title="Pipa Jewellery API")
 api_router = APIRouter(prefix="/api")
@@ -499,19 +506,67 @@ async def create_order(payload: OrderCreate, user=Depends(current_user)):
         "total": total,
         "coupon_code": coupon_code,
         "payment_method": payload.payment_method,
+        "payment_status": "pending" if payload.payment_method == "RAZORPAY" else "cod",
         "status": "pending",
         "created_at": now_iso(),
     }
+
+    # If razorpay, create RP order
+    if payload.payment_method == "RAZORPAY":
+        if not rzp_client:
+            raise HTTPException(500, "Razorpay not configured")
+        rp_order = rzp_client.order.create({
+            "amount": int(total * 100),
+            "currency": "INR",
+            "receipt": order['order_no'][:40],
+            "payment_capture": 1,
+        })
+        order['razorpay_order_id'] = rp_order['id']
+
     await db.orders.insert_one(order)
 
-    # decrement stock
+    # decrement stock (will be restored on RZP failure handler in production)
     for ci in payload.items:
         await db.products.update_one({"id": ci.product_id}, {"$inc": {"stock": -ci.quantity}})
 
-    # clear cart
-    await db.carts.update_one({"user_id": user['id']}, {"$set": {"items": []}}, upsert=True)
+    # clear cart only for COD; for RZP we wait for verification
+    if payload.payment_method != "RAZORPAY":
+        await db.carts.update_one({"user_id": user['id']}, {"$set": {"items": []}}, upsert=True)
     order.pop('_id', None)
     return order
+
+
+class RazorpayVerify(BaseModel):
+    order_id: str
+    razorpay_order_id: str
+    razorpay_payment_id: str
+    razorpay_signature: str
+
+
+@api_router.post("/payments/razorpay/verify")
+async def verify_razorpay(payload: RazorpayVerify, user=Depends(current_user)):
+    if not rzp_client:
+        raise HTTPException(500, "Razorpay not configured")
+    order = await db.orders.find_one({"id": payload.order_id, "user_id": user['id']})
+    if not order:
+        raise HTTPException(404, "Order not found")
+    body = f"{payload.razorpay_order_id}|{payload.razorpay_payment_id}".encode()
+    expected = hmac.new(RAZORPAY_KEY_SECRET.encode(), body, hashlib.sha256).hexdigest()
+    if not hmac.compare_digest(expected, payload.razorpay_signature):
+        await db.orders.update_one({"id": payload.order_id}, {"$set": {"payment_status": "failed"}})
+        raise HTTPException(400, "Signature mismatch")
+    await db.orders.update_one({"id": payload.order_id}, {"$set": {
+        "payment_status": "paid",
+        "razorpay_payment_id": payload.razorpay_payment_id,
+        "status": "confirmed",
+    }})
+    await db.carts.update_one({"user_id": user['id']}, {"$set": {"items": []}}, upsert=True)
+    return {"ok": True}
+
+
+@api_router.get("/payments/razorpay/key")
+async def razorpay_key():
+    return {"key_id": RAZORPAY_KEY_ID or ""}
 
 
 @api_router.get("/orders/mine")
