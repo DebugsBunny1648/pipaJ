@@ -571,6 +571,147 @@ async def admin_stats(_=Depends(current_admin)):
     }
 
 
+# ------------------- Reviews -------------------
+class ReviewIn(BaseModel):
+    rating: int = Field(ge=1, le=5)
+    comment: str = Field(min_length=2, max_length=1000)
+
+
+@api_router.get("/products/{product_id}/reviews")
+async def list_reviews(product_id: str):
+    reviews = await db.reviews.find({"product_id": product_id}, {"_id": 0}).sort("created_at", -1).to_list(length=None)
+    if not reviews:
+        return {"reviews": [], "avg": 0, "count": 0}
+    avg = round(sum(r['rating'] for r in reviews) / len(reviews), 1)
+    return {"reviews": reviews, "avg": avg, "count": len(reviews)}
+
+
+@api_router.post("/products/{product_id}/reviews")
+async def create_review(product_id: str, payload: ReviewIn, user=Depends(current_user)):
+    p = await db.products.find_one({"id": product_id})
+    if not p:
+        raise HTTPException(404, "Product not found")
+    existing = await db.reviews.find_one({"product_id": product_id, "user_id": user['id']})
+    if existing:
+        raise HTTPException(400, "You already reviewed this product")
+    doc = {
+        "id": str(uuid.uuid4()),
+        "product_id": product_id,
+        "user_id": user['id'],
+        "user_name": user['name'],
+        "rating": payload.rating,
+        "comment": payload.comment.strip(),
+        "created_at": now_iso(),
+    }
+    await db.reviews.insert_one(doc)
+    doc.pop('_id', None)
+    return doc
+
+
+@api_router.delete("/reviews/{rid}")
+async def delete_review(rid: str, user=Depends(current_user)):
+    r = await db.reviews.find_one({"id": rid})
+    if not r:
+        raise HTTPException(404, "Not found")
+    if r['user_id'] != user['id'] and user.get('role') != 'admin':
+        raise HTTPException(403, "Not allowed")
+    await db.reviews.delete_one({"id": rid})
+    return {"ok": True}
+
+
+# ------------------- Addresses -------------------
+class AddressIn(BaseModel):
+    label: str = Field(min_length=1, max_length=30)
+    full_name: str = Field(min_length=2)
+    phone: str = Field(min_length=7, max_length=15)
+    line1: str = Field(min_length=2)
+    line2: Optional[str] = ""
+    city: str = Field(min_length=1)
+    state: str = Field(min_length=1)
+    pincode: str = Field(min_length=4, max_length=10)
+    is_default: bool = False
+
+
+@api_router.get("/addresses")
+async def list_addresses(user=Depends(current_user)):
+    return await db.addresses.find({"user_id": user['id']}, {"_id": 0}).sort("created_at", -1).to_list(length=None)
+
+
+@api_router.post("/addresses")
+async def create_address(payload: AddressIn, user=Depends(current_user)):
+    if not payload.phone.isdigit():
+        raise HTTPException(400, "Phone must be digits only")
+    if not payload.pincode.isdigit():
+        raise HTTPException(400, "Pincode must be digits only")
+    doc = payload.model_dump()
+    doc['id'] = str(uuid.uuid4())
+    doc['user_id'] = user['id']
+    doc['created_at'] = now_iso()
+    if doc['is_default']:
+        await db.addresses.update_many({"user_id": user['id']}, {"$set": {"is_default": False}})
+    elif await db.addresses.count_documents({"user_id": user['id']}) == 0:
+        doc['is_default'] = True
+    await db.addresses.insert_one(doc)
+    doc.pop('_id', None)
+    return doc
+
+
+@api_router.delete("/addresses/{aid}")
+async def delete_address(aid: str, user=Depends(current_user)):
+    r = await db.addresses.delete_one({"id": aid, "user_id": user['id']})
+    if r.deleted_count == 0:
+        raise HTTPException(404, "Not found")
+    return {"ok": True}
+
+
+@api_router.post("/addresses/{aid}/default")
+async def set_default_address(aid: str, user=Depends(current_user)):
+    a = await db.addresses.find_one({"id": aid, "user_id": user['id']})
+    if not a:
+        raise HTTPException(404, "Not found")
+    await db.addresses.update_many({"user_id": user['id']}, {"$set": {"is_default": False}})
+    await db.addresses.update_one({"id": aid}, {"$set": {"is_default": True}})
+    return {"ok": True}
+
+
+# ------------------- Lookbook (Shop the Look) -------------------
+class LookbookIn(BaseModel):
+    image: str
+    caption: Optional[str] = ""
+    product_ids: List[str] = Field(default_factory=list)
+    active: bool = True
+
+
+@api_router.get("/lookbook")
+async def list_lookbook():
+    items = await db.lookbook.find({"active": True}, {"_id": 0}).sort("created_at", -1).to_list(length=None)
+    # enrich with product data
+    for it in items:
+        if it.get('product_ids'):
+            it['products'] = await db.products.find({"id": {"$in": it['product_ids']}}, {"_id": 0}).to_list(length=None)
+        else:
+            it['products'] = []
+    return items
+
+
+@api_router.post("/lookbook")
+async def create_lookbook(payload: LookbookIn, _=Depends(current_admin)):
+    if not payload.image:
+        raise HTTPException(400, "Image required")
+    doc = payload.model_dump()
+    doc['id'] = str(uuid.uuid4())
+    doc['created_at'] = now_iso()
+    await db.lookbook.insert_one(doc)
+    doc.pop('_id', None)
+    return doc
+
+
+@api_router.delete("/lookbook/{lid}")
+async def delete_lookbook(lid: str, _=Depends(current_admin)):
+    await db.lookbook.delete_one({"id": lid})
+    return {"ok": True}
+
+
 # ------------------- Seed -------------------
 @app.on_event("startup")
 async def seed_data():
@@ -674,6 +815,28 @@ async def seed_data():
             {"id": str(uuid.uuid4()), "code": "WELCOME10", "discount_percent": 10, "min_order": 0, "active": True, "created_at": now_iso()},
             {"id": str(uuid.uuid4()), "code": "PIPA20", "discount_percent": 20, "min_order": 2000, "active": True, "created_at": now_iso()},
         ])
+
+    # Lookbook
+    if await db.lookbook.count_documents({}) == 0:
+        sample_products = await db.products.find({}, {"_id": 0, "id": 1}).limit(8).to_list(length=None)
+        sp_ids = [p['id'] for p in sample_products]
+        look_imgs = [
+            "https://images.pexels.com/photos/7632901/pexels-photo-7632901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600",
+            "https://images.pexels.com/photos/9293538/pexels-photo-9293538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600",
+            "https://images.pexels.com/photos/13924051/pexels-photo-13924051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600",
+            "https://images.pexels.com/photos/33209522/pexels-photo-33209522.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600",
+        ]
+        looks = []
+        for i, im in enumerate(look_imgs):
+            looks.append({
+                "id": str(uuid.uuid4()),
+                "image": im,
+                "caption": ["Heirloom Glow", "Modern Muse", "Layered Story", "Bridal Reverie"][i],
+                "product_ids": sp_ids[i*2:i*2+2] if i*2+1 < len(sp_ids) else sp_ids[:2],
+                "active": True,
+                "created_at": now_iso(),
+            })
+        await db.lookbook.insert_many(looks)
 
 
 app.include_router(api_router)

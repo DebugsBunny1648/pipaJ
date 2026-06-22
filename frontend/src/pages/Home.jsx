@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "@/lib/api";
 import ProductCard from "@/components/ProductCard";
+import ShopTheLook from "@/components/ShopTheLook";
 
 const Home = () => {
   const [featured, setFeatured] = useState([]);
@@ -101,6 +102,8 @@ const Home = () => {
           </p>
         </div>
       </section>
+
+      <ShopTheLook />
 
       {/* Featured */}
       {featured.length > 0 && (

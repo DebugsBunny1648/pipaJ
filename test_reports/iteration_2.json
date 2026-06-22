@@ -1,0 +1,37 @@
+{
+  "summary": "Verified new features: Reviews, Addresses, Lookbook (backend + frontend). Backend endpoints all green. Frontend works for Shop The Look (home + admin), Address Book in Account, Saved-address picker on Checkout. Frontend Product Reviews component is imported but NOT rendered on ProductDetail page — reviews UI is missing.",
+  "tested_scope": ["backend", "frontend", "auth", "integration"],
+  "passed": [
+    "Auth: demo & admin login work (token returned, user object correct)",
+    "GET /api/products/{id}/reviews -> 200 {reviews,avg,count}",
+    "POST /api/products/{id}/reviews validation: rating=6 -> 422, valid -> 200 with review object",
+    "Duplicate review by same user -> 400 'You already reviewed this product'",
+    "POST review on unknown product -> 404 'Product not found'",
+    "DELETE /api/reviews/{id} as admin (non-owner) -> 200 (admin can delete any)",
+    "GET /api/addresses unauthenticated -> 401, authenticated -> 200 list",
+    "POST /api/addresses invalid phone (too short) -> 422; first valid address auto sets is_default=true",
+    "POST /api/addresses with is_default=true unsets others (verified via list)",
+    "POST /api/addresses/{id}/default -> 200; DELETE /api/addresses/{id} (own) -> 200",
+    "GET /api/lookbook -> 200, 4 seeded items each enriched with products array",
+    "POST /api/lookbook as customer -> 403 'Admin only'; as admin -> 200 with new id",
+    "DELETE /api/lookbook/{id} as customer -> 403; as admin -> 200",
+    "Frontend Home: Shop The Look section renders 4 looks; click opens modal listing tagged products (verified 2 products in first look)",
+    "Frontend Account: Saved Addresses section renders; add-address form works end-to-end; card count goes 1 -> 2 after save",
+    "Frontend Checkout: 'select-address' saved-address picker renders for logged-in user with addresses",
+    "Frontend Admin /admin/lookbook: lists 4 seeded looks, has create form + delete buttons; admin nav link present"
+  ],
+  "failed": [
+    {
+      "area": "Frontend / ProductDetail page",
+      "issue": "ProductReviews component is imported but NEVER rendered inside the JSX of ProductDetail.jsx. The reviews section ([data-testid=product-reviews]) does not appear on /product/:id, so users cannot view or submit reviews from the UI.",
+      "evidence": "grep shows `import ProductReviews from '@/components/ProductReviews'` at line 6 of /app/frontend/src/pages/ProductDetail.jsx, but no `<ProductReviews .../>` usage; render returns closes at line 94 with no reviews block. Playwright on /product/<id>: [data-testid=product-reviews] count=0, star buttons count=0; screenshot shows footer directly after product gallery.",
+      "priority": "HIGH"
+    }
+  ],
+  "action_items": [
+    "Add `<ProductReviews productId={product.id} />` (or similar) inside the ProductDetail JSX, e.g. just before the closing wrapper div on line 94, so the Reviews UI renders on the product detail page."
+  ],
+  "success_rate": {"backend": "100%", "frontend": "~83% (5/6 UI flows green; PDP reviews missing)"},
+  "retest_needed": true,
+  "full_testing_deferred": true
+}

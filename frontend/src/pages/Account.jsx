@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { api, inr } from "@/lib/api";
 import { useAuth } from "@/context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import AddressBook from "@/components/AddressBook";
 
 const Account = () => {
   const { user, logout } = useAuth();
@@ -58,6 +59,8 @@ const Account = () => {
           ))}
         </div>
       )}
+
+      <AddressBook />
     </div>
   );
 };

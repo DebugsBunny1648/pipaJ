@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { api, inr } from "@/lib/api";
 import { useCart } from "@/context/CartContext";
 import { Heart, Truck, Shield, Sparkles, Minus, Plus } from "lucide-react";
+import ProductReviews from "@/components/ProductReviews";
 
 const ProductDetail = () => {
   const { id } = useParams();

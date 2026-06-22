@@ -24,6 +24,7 @@ import AdminUsers from "@/pages/admin/AdminUsers";
 import AdminCategories from "@/pages/admin/AdminCategories";
 import AdminCoupons from "@/pages/admin/AdminCoupons";
 import AdminBanners from "@/pages/admin/AdminBanners";
+import AdminLookbook from "@/pages/admin/AdminLookbook";
 
 const RequireAuth = ({ children }) => {
   const { user, loading } = useAuth();
@@ -68,6 +69,7 @@ function App() {
                 <Route path="categories" element={<AdminCategories />} />
                 <Route path="coupons" element={<AdminCoupons />} />
                 <Route path="banners" element={<AdminBanners />} />
+                <Route path="lookbook" element={<AdminLookbook />} />
               </Route>
             </Routes>
           </BrowserRouter>

@@ -1,5 +1,5 @@
 import { NavLink, Outlet, Link, useNavigate } from "react-router-dom";
-import { LayoutDashboard, Package, ShoppingCart, Users, Tag, Ticket, ImageIcon, LogOut, ExternalLink } from "lucide-react";
+import { LayoutDashboard, Package, ShoppingCart, Users, Tag, Ticket, ImageIcon, LogOut, ExternalLink, Camera } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 
 const AdminLayout = () => {
@@ -14,6 +14,7 @@ const AdminLayout = () => {
     { to: "/admin/categories", icon: Tag, label: "Categories" },
     { to: "/admin/coupons", icon: Ticket, label: "Coupons" },
     { to: "/admin/banners", icon: ImageIcon, label: "Banners" },
+    { to: "/admin/lookbook", icon: Camera, label: "Lookbook" },
   ];
 
   return (

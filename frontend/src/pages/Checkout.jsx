@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "@/context/CartContext";
 import { api, inr } from "@/lib/api";
@@ -12,6 +12,25 @@ const Checkout = () => {
   const [discount, setDiscount] = useState(0);
   const [appliedCode, setAppliedCode] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [savedAddrs, setSavedAddrs] = useState([]);
+  const [selectedAddrId, setSelectedAddrId] = useState("");
+
+  useEffect(() => {
+    api.get("/addresses").then((r) => {
+      setSavedAddrs(r.data);
+      const def = r.data.find((a) => a.is_default) || r.data[0];
+      if (def) {
+        setSelectedAddrId(def.id);
+        setAddr({ full_name: def.full_name, phone: def.phone, line1: def.line1, line2: def.line2 || "", city: def.city, state: def.state, pincode: def.pincode });
+      }
+    }).catch(() => {});
+  }, []);
+
+  const pickAddr = (id) => {
+    setSelectedAddrId(id);
+    const a = savedAddrs.find((x) => x.id === id);
+    if (a) setAddr({ full_name: a.full_name, phone: a.phone, line1: a.line1, line2: a.line2 || "", city: a.city, state: a.state, pincode: a.pincode });
+  };
 
   const shipping = subtotal >= 999 ? 0 : 79;
   const total = subtotal - discount + shipping;
@@ -64,6 +83,22 @@ const Checkout = () => {
       <div className="grid md:grid-cols-3 gap-10">
         <div className="md:col-span-2 space-y-4">
           <h2 className="font-serif-pipa text-2xl mb-2">Shipping Address</h2>
+          {savedAddrs.length > 0 && (
+            <div className="bg-white border border-[#E5E0D8] p-3 rounded mb-2">
+              <label className="text-xs uppercase tracking-widest text-[#4A4A4A] block mb-2">Use saved address</label>
+              <select
+                data-testid="select-address"
+                value={selectedAddrId}
+                onChange={(e) => pickAddr(e.target.value)}
+                className="w-full bg-white border border-[#E5E0D8] px-3 py-2 text-sm outline-none rounded"
+              >
+                <option value="">-- New address --</option>
+                {savedAddrs.map((a) => (
+                  <option key={a.id} value={a.id}>{a.label}: {a.full_name}, {a.city} {a.is_default ? "(default)" : ""}</option>
+                ))}
+              </select>
+            </div>
+          )}
           {[
             ["full_name", "Full Name"],
             ["phone", "Phone (7-15 digits)"],
