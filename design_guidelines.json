@@ -1,0 +1,120 @@
+{
+  "project_name": "Pipa Jewellery",
+  "theme": "Light",
+  "archetype": "Organic & Earthy",
+  "colors": {
+    "background": "#FAF8F5",
+    "surface": "#FFFFFF",
+    "primary": "#B45F45",
+    "secondary": "#555D40",
+    "accent": "#E8D8CE",
+    "text_primary": "#1A1A1A",
+    "text_secondary": "#4A4A4A",
+    "border": "#E5E0D8",
+    "error": "#D32F2F",
+    "success": "#388E3C",
+    "admin_sidebar": "#F3EFE9",
+    "admin_surface": "#FFFFFF",
+    "admin_background": "#F9F6F0"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Cormorant Garamond, serif",
+      "weights": ["400", "500", "600"],
+      "usage": "H1-H4 in storefront. Hero banners, category titles. Use tracking-tight for larger sizes."
+    },
+    "body": {
+      "font_family": "Outfit, sans-serif",
+      "weights": ["300", "400", "500", "600"],
+      "usage": "Paragraphs, buttons, admin panel text, forms. High legibility."
+    }
+  },
+  "layout": {
+    "storefront": {
+      "spacing": "Generous padding (p-8 to p-24). Avoid cramming elements.",
+      "grid": "Bento Grid Mode A for promotional sections. Asymmetric layouts for lookbooks to create visual tension.",
+      "container": "max-w-7xl mx-auto"
+    },
+    "admin_panel": {
+      "spacing": "Tight and functional (p-4 to p-6) to maximize data visibility.",
+      "grid": "Control Room Grid Mode B for dashboard KPIs.",
+      "structure": "Fixed left sidebar, sticky top header."
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#B45F45] text-white rounded-none md:rounded-sm px-8 py-3 font-medium transition-colors hover:bg-[#9c4d36] tracking-wide",
+      "secondary": "border border-[#B45F45] text-[#B45F45] rounded-none md:rounded-sm px-8 py-3 transition-colors hover:bg-[#F9F6F0] tracking-wide"
+    },
+    "cards": {
+      "storefront": "Minimalist. No heavy shadows. Flat or soft borders. Let the product image be the hero.",
+      "admin": "Flat white background (#FFFFFF), 1px solid border (#E5E0D8), soft radius (rounded-md)."
+    },
+    "inputs": {
+      "style": "Shadcn based. 1px solid border (#E5E0D8), focus:ring-1 focus:ring-[#B45F45]. Flat surfaces."
+    }
+  },
+  "media": {
+    "hero_images": [
+      {
+        "url": "https://images.pexels.com/photos/7632901/pexels-photo-7632901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Indian woman in traditional jewelry - perfect for main hero banner overlay."
+      },
+      {
+        "url": "https://images.pexels.com/photos/9293538/pexels-photo-9293538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Dark background portrait showcasing silver jewelry - alternate high-end banner."
+      }
+    ],
+    "category_images": [
+      {
+        "url": "https://images.pexels.com/photos/33209522/pexels-photo-33209522.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Bridal jewelry / Heavy necklaces category."
+      },
+      {
+        "url": "https://images.pexels.com/photos/13924051/pexels-photo-13924051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Layered gold necklaces / Everyday Luxe category."
+      }
+    ],
+    "product_images": [
+      {
+        "url": "https://images.pexels.com/photos/4004225/pexels-photo-4004225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Flatlay of jewelry pieces for bestsellers."
+      },
+      {
+        "url": "https://images.pexels.com/photos/7248760/pexels-photo-7248760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Gold jewelry on marble dish for product cards."
+      },
+      {
+        "url": "https://images.pexels.com/photos/5413313/pexels-photo-5413313.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Minimalist display on white boxes."
+      },
+      {
+        "url": "https://images.pexels.com/photos/16124761/pexels-photo-16124761.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Silver cuban link chain product shot."
+      }
+    ],
+    "admin_placeholders": [
+      {
+        "url": "https://images.pexels.com/photos/97080/pexels-photo-97080.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Data analytics visualization for dashboard overview."
+      }
+    ]
+  },
+  "design_rules": {
+    "accessibility": "Ensure contrast ratios for text. Add aria-labels to icon buttons.",
+    "testing": "All interactive and key informational elements MUST include data-testid attribute.",
+    "animations": "Smooth hover transitions on product cards. Subtle scale up on images. Soft fade-in for page sections.",
+    "icons": "Use lucide-react. Keep stroke-width at 1.5 for a more delicate, refined look."
+  },
+  "instructions_to_main_agent": [
+    "Use Tailwind CSS configured with the provided 'colors' object in tailwind.config.js.",
+    "Include Google Fonts: Cormorant Garamond (serif) and Outfit (sans).",
+    "IMPORTANT: Write React components using .js/.jsx extensions, NOT .tsx, as specified.",
+    "Storefront and Admin Panel should have distinct layout structures but share the underlying warm, earthy brand colors.",
+    "For the storefront, lean into an editorial aesthetic: generous spacing, minimal borders, let product photography shine.",
+    "For the admin panel, use denser spacing, clearer borders, and prioritize function and data visibility.",
+    "Use Shadcn UI components for complex interactions (drawers for cart, dialogs, dropdowns) but customize them heavily to remove the default 'Vercel' look—use our warm background and border colors.",
+    "Ensure the hero image has a subtle overlay (e.g., bg-black/20 to bg-black/40) so text remains readable but the image isn't drowned out.",
+    "Always apply 'data-testid' to actionable elements (buttons, nav links, cart triggers, etc)."
+  ]
+}
