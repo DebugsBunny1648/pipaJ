@@ -82,18 +82,21 @@ webpackConfig.devServer = (devServerConfig) => {
 };
 
 // Wrap with visual edits (automatically adds babel plugin, dev server, and overlay in dev mode)
-if (isDevServer) {
+if (isDevServer && process.env.DISABLE_VISUAL_EDITS !== "true") {
   try {
     const { withVisualEdits } = require("@emergentbase/visual-edits/craco");
-    webpackConfig = withVisualEdits(webpackConfig);
+    const wrapped = withVisualEdits(webpackConfig);
+    // Strip deprecated webpack-dev-server options that break v5
+    const prevDevServer = wrapped.devServer;
+    wrapped.devServer = (devServerConfig) => {
+      const cfg = typeof prevDevServer === "function" ? prevDevServer(devServerConfig) : (prevDevServer || devServerConfig);
+      if (!cfg) return cfg;
+      ["onAfterSetupMiddleware", "onBeforeSetupMiddleware", "https", "http2"].forEach((k) => { if (k in cfg) delete cfg[k]; });
+      return cfg;
+    };
+    webpackConfig = wrapped;
   } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND' && err.message.includes('@emergentbase/visual-edits/craco')) {
-      console.warn(
-        "[visual-edits] @emergentbase/visual-edits not installed — visual editing disabled."
-      );
-    } else {
-      throw err;
-    }
+    console.warn("[visual-edits] disabled:", err.message);
   }
 }
 

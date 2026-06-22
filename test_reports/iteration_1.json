@@ -1,0 +1,42 @@
+{
+  "summary": "Smoke-tested Pipa Jewellery backend (REST API endpoints) and frontend (homepage, login, admin dashboard, shop, add-to-cart). Most flows work, but signup endpoint returns 500 due to ObjectId serialization bug. Admin & customer logins, products, cart, wishlist, coupon validation, admin stats/users, RBAC all PASS.",
+  "tested_scope": ["backend", "frontend", "auth", "integration"],
+  "passed": [
+    "GET /api/categories 200",
+    "GET /api/products with filters 200",
+    "GET /api/banners 200",
+    "POST /api/auth/login admin@pipa.com -> 200 + admin token",
+    "POST /api/auth/login demo@pipa.com -> 200 + customer token",
+    "POST /api/auth/login invalid creds -> 401",
+    "GET /api/auth/me with token -> 200",
+    "POST /api/products without admin -> 403 (RBAC)",
+    "POST /api/auth/signup short password -> 422 (validation works)",
+    "GET /api/admin/stats with admin -> 200 returns total_users/products/orders/revenue/low_stock/daily_revenue",
+    "GET /api/admin/users with admin -> 200; without token -> 401",
+    "POST /api/coupons/validate WELCOME10 -> 10% discount returned",
+    "POST /api/cart/add + GET /api/cart -> item persisted",
+    "POST /api/wishlist/toggle -> in_wishlist:true",
+    "Frontend homepage renders hero, nav, banner",
+    "Frontend /login: admin login redirects to /admin (dashboard shows stats: Revenue/Orders/Customers/Products/Low Stock)",
+    "Frontend /login: demo customer redirects to /account",
+    "Frontend /shop loads product grid; add-to-cart button updates cart badge"
+  ],
+  "failed": [
+    {
+      "area": "backend / auth",
+      "issue": "POST /api/auth/signup returns 500 Internal Server Error for valid new users",
+      "evidence": "curl POST /api/auth/signup with unique email + 6+ char password -> HTTP 500. Backend log: 'ValueError: [TypeError(\"\\'ObjectId\\' object is not iterable\")]' in fastapi.encoders.jsonable_encoder. Root cause: signup() returns the inserted `user` dict which still contains Mongo `_id` ObjectId. Login() correctly pops `_id` before returning; signup() does not.",
+      "priority": "HIGH"
+    }
+  ],
+  "action_items": [
+    "Fix /api/auth/signup in /app/backend/server.py: pop '_id' from `user` (or build response dict without it) before returning. Mirror the pattern used in login() which does `user.pop('_id', None)`. This blocks the entire customer signup flow."
+  ],
+  "success_rate": {"backend": "94%", "frontend": "100% (flows tested)"},
+  "retest_needed": true,
+  "full_testing_deferred": true,
+  "test_credentials_used": {
+    "admin": "admin@pipa.com / Admin@123",
+    "customer": "demo@pipa.com / Demo@123"
+  }
+}
