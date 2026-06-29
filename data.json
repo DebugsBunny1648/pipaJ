@@ -1,0 +1,4186 @@
+{
+    "data": [
+        {
+            "_id": "6a1d931ee6bd3a5961e21ef4",
+            "title": "Flaunt it",
+            "description": "<p>Anti tarnish waterproof hypoallergenic </p><p>Gold plated</p><p>(Avoid perfume on jewellery)</p>",
+            "mrp": 549,
+            "lifetimeSold": 1,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 549,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/mBB65Vg4RmOn.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/X7aB9s01gccM.jpg",
+                "https://d28arj6mdig261.cloudfront.net/1782472153782.webp"
+            ],
+            "entityId": 2763,
+            "slug": "Flaunt-it",
+            "config": {},
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 549,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-14T18:17:18.000Z",
+            "updatedAt": "2026-06-26T11:09:14.285Z",
+            "deliveryCharge": 0,
+            "id": "6a1d931ee6bd3a5961e21ef4"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21eed",
+            "title": "Her mood swings",
+            "description": "Super lightweight <br>Waterproof anti tarnish",
+            "mrp": 590,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 590,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/jVDWrE2C2RVP.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/t0k4cFXJjeRH.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/sCxXcU7QZHUl.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "her-mood-swings",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "dbe3343019770736efa78c3a72ffb2a7"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-14T18:15:53.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 590,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-14T18:15:53.000Z",
+            "updatedAt": "2026-06-01T14:11:42.154Z",
+            "id": "6a1d931ee6bd3a5961e21eed"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21eff",
+            "title": "Daily wear basic hoops",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 149,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 149,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/jhqFImxV78P5.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/jmYE7gjfBPSi.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/HxzY1Ov9CiTi.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "daily-wear-basic-hoops",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "094e264e52329806b4c500697379f652"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-12T09:45:31.000Z",
+                    "customAttributes": [
+                        {
+                            "attributeType": "text",
+                            "required": true,
+                            "name": "Mention number here",
+                            "id": "e529f879f6fd8959aff85557adf748db"
+                        }
+                    ]
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 149,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-12T09:45:31.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21eff"
+        },
+        {
+            "_id": "6a1d931ce6bd3a5961e21e98",
+            "title": "Strawberry girl",
+            "description": "Lightweight-Anti tarnish waterproof hypoallergenic ",
+            "mrp": 549,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 399,
+            "discount": 150,
+            "discountPercent": 27,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/1rQm9gcGAwNS.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/0JihPuiuN3P7.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/GHtpxX0rs085.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/TMLQRLt1wxtL.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "strawberry-earring",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "19f808e13bf50cd6bb0f4a928ebb2e47"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-10T16:57:02.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 549,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-10T16:57:02.000Z",
+            "updatedAt": "2026-06-01T14:11:40.300Z",
+            "id": "6a1d931ce6bd3a5961e21e98"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f16",
+            "title": "until the last petal",
+            "description": "Lightweight- anti tarnish waterproof hypoallergenic <br>Glass work ",
+            "mrp": 549,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 549,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/nQz93KpdlMiT.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/EKL2jWRIr3pw.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/YBe1rmK4Ufb3.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "until-the-last-petal",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "fe7253987968cc8d611a6da3c5eb2a35"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-10T16:52:39.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 549,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-10T16:52:39.000Z",
+            "updatedAt": "2026-06-01T14:11:43.089Z",
+            "id": "6a1d931fe6bd3a5961e21f16"
+        },
+        {
+            "_id": "6a1d931ce6bd3a5961e21e97",
+            "title": "Egyptian glory",
+            "description": "Lightweight- Anti tarnish waterproof hypoallergenic <br>Blue stone work<br>(Avoid perfume on jewellery)<br><br><br>",
+            "mrp": 560,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 560,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/JelYu3upMXgL.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/CZfaqV5HtwLt.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "egyptian-glory",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "53404deddbc509467ab74f3e98f1c7d9"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-10T16:49:44.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 560,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-10T16:49:44.000Z",
+            "updatedAt": "2026-06-01T14:11:40.300Z",
+            "id": "6a1d931ce6bd3a5961e21e97"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21efe",
+            "title": "Tulip earring",
+            "description": "Anti tarnish waterproof <br>Lightweight ",
+            "mrp": 599,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 599,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/eTgwYwj6LI2H.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "tulip",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "c4380b2a157e2913b75f7f094792d109"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-10T16:45:00.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 599,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-10T16:45:00.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21efe"
+        },
+        {
+            "_id": "6a1d9311e6bd3a5961e21e2f",
+            "title": "fish bone earring",
+            "description": "<p>Lightweight- Enamel and pearl work</p>",
+            "mrp": 549,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 6,
+            "discountedPrice": 549,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/7WBTkjyz1QmL.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/cD6YrDbSlo0X.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/vx1z2m26ka4c.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "fish-bone-earring",
+            "config": {},
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 549,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-10T16:42:59.000Z",
+            "updatedAt": "2026-06-09T10:11:22.498Z",
+            "deliveryCharge": 0,
+            "id": "6a1d9311e6bd3a5961e21e2f"
+        },
+        {
+            "_id": "6a1d931ce6bd3a5961e21e99",
+            "title": "Golden trap",
+            "description": "<p>Lightweight- Anti tarnish waterproof hypoallergenic </p><p>Gold plated </p><p>( Avoid perfume on jewellery )</p>",
+            "mrp": 560,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 560,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/OJFDYWsRcqTu.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/YFOM0XbPcnPq.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/e8Mbih52p9Rh.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/CiT7ICNz4Ci6.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "Golden-trap",
+            "config": {},
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 560,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-10T16:39:07.000Z",
+            "updatedAt": "2026-06-26T16:45:18.065Z",
+            "deliveryCharge": 0,
+            "id": "6a1d931ce6bd3a5961e21e99"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f21",
+            "title": "Heaven heart",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/xg7yDHp2Pwxy.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/tFMnMFydGieJ.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "heaven-heart",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "fb8ba0edc0da6440998623dd1fcf55f8"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-10T03:56:04.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-10T03:56:04.000Z",
+            "updatedAt": "2026-06-01T14:11:43.089Z",
+            "id": "6a1d931fe6bd3a5961e21f21"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21edd",
+            "title": "unicorn charm chain",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 330,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 330,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/xikt0PoZyxf4.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/jqUwmlGDM693.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "unicorn-charm-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "846289378a939c399cdf727fb9e47e1f"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-10T03:53:22.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 330,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-10T03:53:22.000Z",
+            "updatedAt": "2026-06-01T14:11:41.778Z",
+            "id": "6a1d931de6bd3a5961e21edd"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21f03",
+            "title": "evil eye scooty charm - additional",
+            "description": "Handmade evil eye scooty charm for your loved one <br>( add this for the gift hamper box) ",
+            "mrp": 199,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 4,
+            "discountedPrice": 199,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/U1fXvnBRcqUc.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/9M0iSXqfgWTI.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "evil-eye-scooty-charm-additional",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "ff0a899834c2b63837cb3895219888af"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "0258ce7f12df84f3d5eb5738d3e15a09"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-09T17:15:31.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 199,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-09T17:15:31.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21f03"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21f09",
+            "title": "Hair clip ( additional)",
+            "description": "Hand made hair clips<br>For additional gift hamper",
+            "mrp": 130,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 149,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/Mz6Ot1SeJzY9.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/pfzGzG6Bg5OV.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/QQrodUkdiPO3.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "hair-clip-additional",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "022562832339d5e7051b9cd23cb6876f"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "0258ce7f12df84f3d5eb5738d3e15a09"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-07T12:05:20.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": true,
+            "minVariantPrice": 130,
+            "attributes": [
+                "fit"
+            ],
+            "variantOptions": {
+                "fit": [
+                    "tulip clip",
+                    "rabbit clip"
+                ]
+            },
+            "variants": [
+                {
+                    "id": "b1bee9c90080416c3891fcd80e961166",
+                    "attributes": {
+                        "fit": "tulip clip"
+                    },
+                    "mrp": 130,
+                    "stock": 1,
+                    "lifetimeSold": 0,
+                    "sku": "hair-clip-additional-tulip-clip-b1bee9c9",
+                    "images": [
+                        "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/Mz6Ot1SeJzY9.jpg",
+                        "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/pfzGzG6Bg5OV.jpg",
+                        "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/QQrodUkdiPO3.jpg"
+                    ],
+                    "discount": 0,
+                    "discountPercent": 0,
+                    "discountedPrice": 130
+                },
+                {
+                    "id": "b3477be0ad98e8289c3d4660abdfb550",
+                    "attributes": {
+                        "fit": "rabbit clip"
+                    },
+                    "mrp": 149,
+                    "stock": 0,
+                    "lifetimeSold": 0,
+                    "sku": "hair-clip-additional-rabbit-clip-b3477be0",
+                    "images": [
+                        "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/Mz6Ot1SeJzY9.jpg",
+                        "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/pfzGzG6Bg5OV.jpg",
+                        "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/QQrodUkdiPO3.jpg"
+                    ],
+                    "discount": 0,
+                    "discountPercent": 0,
+                    "discountedPrice": 149
+                }
+            ],
+            "createdAt": "2025-09-07T12:05:20.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21f09"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21f0b",
+            "title": "keychain (additional)",
+            "description": "Handmade sunflower and cherry keychain for additional gift hamper",
+            "mrp": 119,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 119,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/4xtqkzjOMt5i.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/1Q1hlRELCafc.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ZTg4YGei7jAC.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/e3IfzbHiSKdY.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "keychain-additional",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "d0db3ecbbc5c933307d96e0fd52f164d"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "0258ce7f12df84f3d5eb5738d3e15a09"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-07T11:53:16.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 119,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-07T11:53:16.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21f0b"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21f0a",
+            "title": "coffee bookmark ( additional)",
+            "description": "Handmade bookmark for additional gift ",
+            "mrp": 149,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 149,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/A3li17uS4jFb.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/5jsCC3hXSn59.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "coffee-bookmark-additional",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "f7db6ba97a17b68da3a8fcda4962a39a"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "0258ce7f12df84f3d5eb5738d3e15a09"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-07T11:49:47.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 149,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-07T11:49:47.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21f0a"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21f04",
+            "title": "Daisy bookmark (additional)",
+            "description": "Handmade daisy bookmark <br>Additional for gifting ",
+            "mrp": 60,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 2,
+            "discountedPrice": 60,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/X4zweb87m6av.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/qOH3cOCT2zvx.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "daisy-book-mark-additional",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "6bc63dbb772e04ad31f86a69d5712865"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "0258ce7f12df84f3d5eb5738d3e15a09"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-07T11:48:10.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 60,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-07T11:48:10.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21f04"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f17",
+            "title": "star hand chain",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 360,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 360,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/gbUNzdmmhS6n.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "star-hand-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "90fe86ceed7cbba5a0e87b5209e395b3"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "af29ee3bef5ff83422c04165a968789f"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-04T14:25:15.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 360,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-04T14:25:15.000Z",
+            "updatedAt": "2026-06-01T14:11:43.089Z",
+            "id": "6a1d931fe6bd3a5961e21f17"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f1b",
+            "title": "Diamond anklet",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 339,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 339,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/V0skzCGZZcbk.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/EEwKu40xzy1k.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/uu95WDoAjN6x.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "diamond-anklet",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "bc802988fddaedd323acbe89c3450515"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "c08a2181d45589bfecfc3966fca26ce2"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-01T14:30:36.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 339,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-01T14:30:36.000Z",
+            "updatedAt": "2026-06-01T14:11:43.089Z",
+            "id": "6a1d931fe6bd3a5961e21f1b"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21ef1",
+            "title": "gold love plated anklet",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 349,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 2,
+            "discountedPrice": 349,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/w4RavLdS13Nk.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/wx4RjdgGoLJ7.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/1xi5bMk48gwA.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "gold-plated-anklet",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "0b44ca73324094dd0f14f81f8279e650"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "c08a2181d45589bfecfc3966fca26ce2"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-01T14:23:17.000Z",
+                    "customAttributes": [
+                        {
+                            "attributeType": "text",
+                            "required": true,
+                            "name": "Mention number here",
+                            "id": "e529f879f6fd8959aff85557adf748db"
+                        }
+                    ]
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 349,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-01T14:23:17.000Z",
+            "updatedAt": "2026-06-01T14:11:42.155Z",
+            "id": "6a1d931ee6bd3a5961e21ef1"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21eea",
+            "title": "evil eye and multi colour anklet",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated <br><br>",
+            "mrp": 360,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 349,
+            "discount": 11,
+            "discountPercent": 3,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/052SyXxvHO6L.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/Y80g5ftc7Lqe.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/1ofGWsT6P4TA.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/KbP0eTT41D6Z.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/42gv9YE6TLRX.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "evil-eye-and-multi-colour-anklet",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "6bd58678481778e64a71292f8025ff1f"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "c08a2181d45589bfecfc3966fca26ce2"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-01T14:11:52.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 360,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-01T14:11:52.000Z",
+            "updatedAt": "2026-06-01T14:11:42.155Z",
+            "id": "6a1d931ee6bd3a5961e21eea"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21ef6",
+            "title": "bow Anklet",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 399,
+            "lifetimeSold": 1,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 350,
+            "discount": 49,
+            "discountPercent": 12,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/i0ucDtOOYB5q.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/sIgEXfsU0NbX.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/J1Zy42oKLVE5.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/vlAqgMRZ3LM1.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "anklet",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "861ffe8bcd6c239cb05b326357891fe7"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "c08a2181d45589bfecfc3966fca26ce2"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-01T14:08:35.000Z",
+                    "customAttributes": [
+                        {
+                            "attributeType": "text",
+                            "required": true,
+                            "name": "Mention number here",
+                            "id": "e529f879f6fd8959aff85557adf748db"
+                        }
+                    ]
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 399,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-01T14:08:35.000Z",
+            "updatedAt": "2026-06-29T03:40:47.113Z",
+            "id": "6a1d931ee6bd3a5961e21ef6"
+        },
+        {
+            "_id": "6a1d9314e6bd3a5961e21e40",
+            "title": "Eyeconic",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated ",
+            "mrp": 560,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 560,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/hNTVDnazFcy4.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/0au2P8rDI1Sx.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "eyeconic",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "bcd9385afc140810e6e407c6f0e1f2c0"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-01T10:44:52.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 560,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-01T10:44:52.000Z",
+            "updatedAt": "2026-06-01T14:11:32.194Z",
+            "id": "6a1d9314e6bd3a5961e21e40"
+        },
+        {
+            "_id": "6a1d931ce6bd3a5961e21e9d",
+            "title": "Abstract charm",
+            "description": "Waterproof anti tarnish hypoallergenic <br>Gold plated <br>(Avoid perfume on jewellery)<br>",
+            "mrp": 549,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 549,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/Kf6mNrJXSezB.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/Ge5drHmCR1ub.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/1BoN2ozanqo0.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/lp4ocwfINa6o.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/rRNfvBuMZNBd.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "abstract-charm",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "6219953f3a19dd6ce552babd1966de29"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-01T10:40:54.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 549,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-01T10:40:54.000Z",
+            "updatedAt": "2026-06-01T14:11:40.299Z",
+            "id": "6a1d931ce6bd3a5961e21e9d"
+        },
+        {
+            "_id": "6a1d9317e6bd3a5961e21e48",
+            "title": "Guardian angle earring",
+            "description": "Anti tarnish waterproof <br>Gold plated earring ",
+            "mrp": 549,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 2,
+            "discountedPrice": 549,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/e1lbhJRAk3WI.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/jHlpAV6g3lPs.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/lQb36FFAv6mL.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "guardian-angle-earring",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "b68161b4a1e5b950b04ae4e6e51618eb"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-09-01T10:29:18.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 549,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-09-01T10:29:18.000Z",
+            "updatedAt": "2026-06-01T14:11:34.629Z",
+            "id": "6a1d9317e6bd3a5961e21e48"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f11",
+            "title": "Blush cherry bracelet",
+            "description": "<p>Anti tarnish waterproof hypoallergenic </p><p>Gold plated</p>",
+            "mrp": 360,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 324,
+            "discount": 36,
+            "discountPercent": 10,
+            "images": [
+                "https://d28arj6mdig261.cloudfront.net/1782645118302.webp",
+                "https://d28arj6mdig261.cloudfront.net/1782645118312.webp",
+                "https://d28arj6mdig261.cloudfront.net/1782645118381.webp"
+            ],
+            "entityId": 2763,
+            "slug": "Blush-cherry-bracelet",
+            "config": {},
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 360,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-31T19:35:59.000Z",
+            "updatedAt": "2026-06-28T11:11:59.161Z",
+            "deliveryCharge": 0,
+            "id": "6a1d931fe6bd3a5961e21f11"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21efd",
+            "title": "funky charm chain",
+            "description": "Anti  tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 550,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 550,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ULqolyERxZx2.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "funky-charm-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "ca47600750609edc90776101d8f8d634"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-31T14:54:18.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 550,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-31T14:54:18.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21efd"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21efc",
+            "title": "heart cherry",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated ",
+            "mrp": 340,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 299,
+            "discount": 41,
+            "discountPercent": 12,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/cD6YZQc7MiLd.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/V4b1cd9E1Kvc.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "heart-cherry",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "c6147e97ba3f18a2a849da3a4b59b7df"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-31T09:08:53.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 340,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-31T09:08:53.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21efc"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21edf",
+            "title": "cherry blossom",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 330,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 330,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/rLuITto0BW0k.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/b3qEBz4FYz01.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/C6EHO80fyagq.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/j1rrBMD7i9o2.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "cherry-blossom",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "8f18f7463f9a87e5f76c239b6c666dff"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-31T09:06:49.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 330,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-31T09:06:49.000Z",
+            "updatedAt": "2026-06-01T14:11:41.778Z",
+            "id": "6a1d931de6bd3a5961e21edf"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21f06",
+            "title": "cherry earring",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 360,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 360,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/O7BhcCVUjbrR.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/VuVyjzBElRYO.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/IRolqbvxWVs8.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "cherry-earring",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "0652c04a7ee5741b81dc30f1d50e0ecc"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-31T09:03:22.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 360,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-31T09:03:22.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21f06"
+        },
+        {
+            "_id": "6a1d931ce6bd3a5961e21ebd",
+            "title": "Magical charm chain",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 360,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 360,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/cnB5QvbOq7bf.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/GrSMu3huqjha.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ABDYzb2uI5aH.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "magical-charm-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "ab4f6fce8bd371d6777f6e4235a85c3b"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-30T11:45:38.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 360,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-30T11:45:38.000Z",
+            "updatedAt": "2026-06-01T14:11:40.695Z",
+            "id": "6a1d931ce6bd3a5961e21ebd"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f0f",
+            "title": "Navratri set",
+            "description": "Necklace-earring-bangle<br>Oxidised jewellery <br>(Keep away from water)",
+            "mrp": 199,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 199,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/yofc5dtMBJwy.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "navratri-set",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "8e102648df80a60b6a9cd429618e5f37"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "24cc206c516721c697fedf26915c0a54"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-21T14:58:32.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 199,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-21T14:58:32.000Z",
+            "updatedAt": "2026-06-01T14:11:43.089Z",
+            "id": "6a1d931fe6bd3a5961e21f0f"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f14",
+            "title": "Kashmiri jhumka",
+            "description": "Oxidised jewellery <br>(Keep away from water)<br><br>",
+            "mrp": 199,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 149,
+            "discount": 50,
+            "discountPercent": 25,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/g0aBcOpfUePJ.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "kashmiri-jhumka",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "fabe5da95814427968029bf2abed307f"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "24cc206c516721c697fedf26915c0a54"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-21T14:56:38.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 199,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-21T14:56:38.000Z",
+            "updatedAt": "2026-06-01T14:11:43.089Z",
+            "id": "6a1d931fe6bd3a5961e21f14"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f13",
+            "title": "Enamel bangles each",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated<br>Enamel bangle",
+            "mrp": 399,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 399,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/bHL4y6gOjA6h.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/YGl5R9WXsTZv.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/22Nz8U3fK8CI.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "enamel-bangles-bceef0da",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "bceef0da3012bd219ed31cb64b844e1c"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "0cf40759518da24ee2e7e2931f92b28b"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-20T16:07:14.000Z",
+                    "customAttributes": [
+                        {
+                            "attributeType": "text",
+                            "required": true,
+                            "name": "Mention Colour Here ",
+                            "id": "033d9c0976c506aebd45d2595d816c99"
+                        }
+                    ]
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 399,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-20T16:07:14.000Z",
+            "updatedAt": "2026-06-01T14:11:43.089Z",
+            "id": "6a1d931fe6bd3a5961e21f13"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21f02",
+            "title": "Flower chain bracelet",
+            "description": "<p>Anti tarnish waterproof hypoallergenic </p><p>Gold plated</p>",
+            "mrp": 390,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 312,
+            "discount": 78,
+            "discountPercent": 20,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/r7MoZsMsVpUm.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "Flower-chain-bracelet",
+            "config": {},
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": true,
+            "minVariantPrice": 390,
+            "attributes": [
+                "Color"
+            ],
+            "variantOptions": {
+                "Color": [
+                    "Red",
+                    "White",
+                    "Brown"
+                ]
+            },
+            "variants": [
+                {
+                    "id": "variant_1782645343702_0",
+                    "attributes": {
+                        "Color": "Red"
+                    },
+                    "mrp": 390,
+                    "stock": 0,
+                    "sku": "PROD-COL-RED",
+                    "images": [
+                        "https://d28arj6mdig261.cloudfront.net/1782645356687.webp"
+                    ],
+                    "discountPercent": 20,
+                    "discount": 78,
+                    "discountedPrice": 312
+                },
+                {
+                    "id": "variant_1782645343702_1",
+                    "attributes": {
+                        "Color": "White"
+                    },
+                    "mrp": 399,
+                    "stock": 1,
+                    "sku": "PROD-COL-WHITE",
+                    "images": [
+                        "https://d28arj6mdig261.cloudfront.net/1782645360672.webp"
+                    ],
+                    "discountPercent": 20,
+                    "discount": 80,
+                    "discountedPrice": 319
+                },
+                {
+                    "id": "variant_1782645343702_2",
+                    "attributes": {
+                        "Color": "Brown"
+                    },
+                    "mrp": 390,
+                    "stock": 1,
+                    "sku": "PROD-COL-BROWN",
+                    "images": [
+                        "https://d28arj6mdig261.cloudfront.net/1782645362588.webp"
+                    ],
+                    "discountPercent": 20,
+                    "discount": 78,
+                    "discountedPrice": 312
+                }
+            ],
+            "createdAt": "2025-08-17T11:33:47.000Z",
+            "updatedAt": "2026-06-28T11:16:02.957Z",
+            "deliveryCharge": 0,
+            "id": "6a1d931ee6bd3a5961e21f02"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ee0",
+            "title": "strawberry chain",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/NFcCw02jTaw6.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "strawberry-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "dc9020368d16fe43ff96dd4ec6def007"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-15T09:26:40.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-15T09:26:40.000Z",
+            "updatedAt": "2026-06-01T14:11:41.778Z",
+            "id": "6a1d931de6bd3a5961e21ee0"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21f07",
+            "title": "Bow chain",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/EnOuxzbU3hQu.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ueypTmxq9Bwf.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "bow-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "c67d45b5745491fcc75b3f77c2b47123"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-15T09:25:14.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-15T09:25:14.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21f07"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21f05",
+            "title": "Little garden",
+            "description": "Anti tarnish waterproof hypoallergenic <br>18k gold plated<br>Enamel pendant ",
+            "mrp": 330,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 330,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/fKd8BVeeb0mf.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/t8s8nKxxczRZ.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "little-garden",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "5e48c985789b1c752b6bd746f4548ff2"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-15T07:35:30.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 330,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-15T07:35:30.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21f05"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ee1",
+            "title": "cherry blossom",
+            "description": "Anti tarnish waterproof hypoallergenic <br>18k gold plated",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/oggrpCL26cym.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/h1Sf5eqTNd18.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "cherry-blossom",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "01e3ae312ec0a4aed0dbd046d67b4d81"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-15T07:32:01.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-15T07:32:01.000Z",
+            "updatedAt": "2026-06-01T14:11:41.779Z",
+            "id": "6a1d931de6bd3a5961e21ee1"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f1e",
+            "title": "Ripped cherry chain",
+            "description": "Anti tarnish waterproof hypoallergenic <br>18k gold plated",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/kZN4fvl1pXbM.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/EIvMa2i8rlHq.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "ripped-cherry-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "27cbd11e5ff81d2956f784b632e5cc41"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-15T07:30:42.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-15T07:30:42.000Z",
+            "updatedAt": "2026-06-01T14:11:43.089Z",
+            "id": "6a1d931fe6bd3a5961e21f1e"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f20",
+            "title": "Dream chain",
+            "description": "Anti tarnish waterproof hypoallergenic <br>18k gold plated",
+            "mrp": 330,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 330,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/oMltLN6feneE.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/lnySZRJsQmlm.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "her-elegance-gold-drop-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "6ba45ef2c5e09a0e12fc9266b42447b2"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-10T13:06:49.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 330,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-10T13:06:49.000Z",
+            "updatedAt": "2026-06-01T14:11:43.089Z",
+            "id": "6a1d931fe6bd3a5961e21f20"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f26",
+            "title": "Royal heart earring ",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 340,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 340,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/3cicMMcRQcTG.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "royal-heart-earring",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "e1828d5da3a4c6100aabb0430f9f2910"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-10T09:44:47.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 340,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-10T09:44:47.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f26"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21efa",
+            "title": "Pearl hoop",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 349,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 299,
+            "discount": 50,
+            "discountPercent": 14,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/JunJCJFhyJCK.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/lXhSuyOTZL11.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "pearl-hoop",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "ee48e800f59661238fd9853b9f7cb86d"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-07T15:31:45.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 349,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-07T15:31:45.000Z",
+            "updatedAt": "2026-06-01T14:11:42.154Z",
+            "id": "6a1d931ee6bd3a5961e21efa"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21ef8",
+            "title": "Big bow earring",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 330,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 260,
+            "discount": 70,
+            "discountPercent": 21,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/PwBj7PykMzSF.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/6Nl9iUPnO2YB.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "big-bow-earring",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "868844f9962b19c27ecd7c3ded94c1f6"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-07T15:26:00.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 330,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-07T15:26:00.000Z",
+            "updatedAt": "2026-06-01T14:11:42.154Z",
+            "id": "6a1d931ee6bd3a5961e21ef8"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f2f",
+            "title": "Drop heart earring",
+            "description": "Waterproof hypoallergenic anti tarnish<br>Gold plated",
+            "mrp": 280,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 280,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/lPZ3mQ8ZFxvK.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ak4JEvUe6oVA.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "drop-heart-earring",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "bf33ffda6e1ad002fcf52a9c835baef8"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-07T15:21:57.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 280,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-07T15:21:57.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f2f"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f28",
+            "title": "Double heart stud",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 349,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 349,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/wNSYOhDgmZCj.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "double-heart-stud",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "877b3ff82d68b24ade581757b35adcd4"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-07T15:19:46.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 349,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-07T15:19:46.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f28"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f2b",
+            "title": "Statement hoop",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 340,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 340,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/xmYSHKhLRWbh.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/KWxQLhGJZ8RC.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "statement-hoop",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "859af7a67cae6ed3832dfe2de4aae416"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-07T15:17:57.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 340,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-07T15:17:57.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f2b"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21eda",
+            "title": "Hanging heart chain",
+            "description": "Silver chain <br>Waterproof hypoallergenic anti tarnish<br>Gold- silver plated",
+            "mrp": 330,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 330,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/53cNI5TCOgDl.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/WRMHCwixVJaz.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "hanging-heart-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "3e10429c3f19dc33faea164965ca29f1"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-07T15:15:23.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 330,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-07T15:15:23.000Z",
+            "updatedAt": "2026-06-01T14:11:41.778Z",
+            "id": "6a1d931de6bd3a5961e21eda"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f24",
+            "title": "classy earring",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 360,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 360,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/fdBEoHaRaiKG.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/QtQ2EDH8T52n.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "classy-earring",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "2c3bcfa5850cb7e0d6297673f0d42a6a"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-07T15:13:56.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 360,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-07T15:13:56.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f24"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f2c",
+            "title": "Hanging heart chain",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Waterproof ",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/GDtsmSaxW10S.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/2eMsSjkMgewv.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "hanging-heart-chain-ad56fa8e",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "ad56fa8e4fed5e8be3050524527146fd"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-07T15:12:25.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-07T15:12:25.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f2c"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f29",
+            "title": "Gold flower ",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 360,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 360,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/YYT7lPooB1F4.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/lsObCmUioEvP.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "gold-flower",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "7473812dd728acce7d59044bb49c0042"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-07T15:10:50.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 360,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-07T15:10:50.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f29"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ebf",
+            "title": "Classic hoops",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 380,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 380,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/auK0v8addWMe.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "classic-hoops",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "fe48aedb02ca86e425628e922d1934e1"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-05T14:41:09.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 380,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-05T14:41:09.000Z",
+            "updatedAt": "2026-06-01T14:11:41.073Z",
+            "id": "6a1d931de6bd3a5961e21ebf"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ece",
+            "title": "melting royalty earring",
+            "description": "",
+            "mrp": 399,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 399,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/d1ZwfVl64UKe.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/cZTxeHtBdf2u.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "gold-drop",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "539c2f0ba7bca5c9324f14af0ba49103"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-05T14:32:16.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 399,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-05T14:32:16.000Z",
+            "updatedAt": "2026-06-01T14:11:41.073Z",
+            "id": "6a1d931de6bd3a5961e21ece"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f31",
+            "title": "sparking heart pendant ",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Silver plated",
+            "mrp": 349,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 349,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/n2SLWOOtm2XU.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/IPS3zBbMyWme.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/azmdXpfr7xwE.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/FjhbSUak353t.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "sparking-heart-pendant",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "0a8ecba6c4ab05375976e2c8ad0085f1"
+                },
+                "dm2buy": {
+                    "collections": [],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-05T09:51:18.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 349,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-05T09:51:18.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f31"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ed6",
+            "title": "forest heart pendant",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated ",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/XJV8UScuDJ5Z.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/uFr7gd8s0gRI.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/4AHDogRM4K7L.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/SWqrK40R4kjW.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "forest-heart-pendant",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "7d5637e0ca5deebb8dede7c667336fef"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-03T17:28:13.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-03T17:28:13.000Z",
+            "updatedAt": "2026-06-01T14:11:41.778Z",
+            "id": "6a1d931de6bd3a5961e21ed6"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ede",
+            "title": "Holding crystal ",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated",
+            "mrp": 280,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 280,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/P4n3R0a9o4YH.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/4GCvQmKr1gDD.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "holding-crystal",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "12586757819c6eb4c98c58f42a6f1666"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-03T17:21:38.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 280,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-03T17:21:38.000Z",
+            "updatedAt": "2026-06-01T14:11:41.779Z",
+            "id": "6a1d931de6bd3a5961e21ede"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ed7",
+            "title": "knot chain",
+            "description": "Anti tarnish waterproof and hypoallergenic <br>Gold plated",
+            "mrp": 349,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 349,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/QHBAndiO0Cyc.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/Hsqe8l7qaOgc.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "knot-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "42503689d1e7948c463e86a037d02207"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-08-03T17:19:29.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 349,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-08-03T17:19:29.000Z",
+            "updatedAt": "2026-06-01T14:11:41.778Z",
+            "id": "6a1d931de6bd3a5961e21ed7"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f35",
+            "title": "Diamond statement bracelet",
+            "description": "Stainless steel",
+            "mrp": 380,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 380,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/o49pO19UA1AF.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/HCmWnWkNlAiC.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/D0HUhFZOETtS.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/szyftR0zJAif.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "diamond-statement-bracelet",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "7c76dc65c1aa899f58102ed91765aad6"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "c1d0d8bdd214b948317632f9ce71ccea"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-28T16:31:24.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 380,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-28T16:31:24.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f35"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f2a",
+            "title": "Rainbow tennis crystal bracelet",
+            "description": "Multi colour crystal <br>Anti tarnish waterproof ",
+            "mrp": 420,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 420,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/gZeaHvLzNdij.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/QykWbihAdGQU.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/BPKgaucjdjQ7.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "rainbow-tennis-crystal-bracelet",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "8ce897a063c4676ac656f47c07b90c14"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "c1d0d8bdd214b948317632f9ce71ccea"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-28T16:26:59.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 420,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-28T16:26:59.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f2a"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21ee8",
+            "title": "Heart drop bracelet",
+            "description": "Gold plated<br>Anto tarnish waterproof hypoallergenic ",
+            "mrp": 360,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 360,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/oi07BBQMHeMg.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/7FTantpsk1cO.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/k8dFiRGb6y29.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/OAFzDz4duwRY.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/WE9vF3HVZcoA.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "heart-drop-bracelet",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "2e9b9f88d5070854de814c09f69655ec"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "c1d0d8bdd214b948317632f9ce71ccea"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-27T16:37:46.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 360,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-27T16:37:46.000Z",
+            "updatedAt": "2026-06-01T14:11:42.154Z",
+            "id": "6a1d931ee6bd3a5961e21ee8"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21ef9",
+            "title": "Pink majestic bracelet",
+            "description": "Stainless steel <br>Silver plated ",
+            "mrp": 380,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 380,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/OFei9PJGAMSp.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/TJ9JGd8KkIiO.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "pink-majesty",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "a113de18784cd04232e8aad7b67d8786"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "c1d0d8bdd214b948317632f9ce71ccea"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-27T16:34:16.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 380,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-27T16:34:16.000Z",
+            "updatedAt": "2026-06-01T14:11:42.154Z",
+            "id": "6a1d931ee6bd3a5961e21ef9"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f2d",
+            "title": "Royalty vintage bracelet",
+            "description": "Anti tarnish waterproof hypoallergenic <br>18k gold plated",
+            "mrp": 399,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 399,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/a6JcMFs8R5sy.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/rmcD91Vx0QeK.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/rjpL6Tvnz1B9.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/eiBm2peVludO.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "royalty-vintage-bracelet",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "b4c61f3885d28f5421171bb1e5eae563"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "c1d0d8bdd214b948317632f9ce71ccea"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-27T16:28:13.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 399,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-27T16:28:13.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f2d"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f2e",
+            "title": "Heart chain bracelet",
+            "description": "Gold plated<br>Anti tarnish, waterproof, hypoallergenic ",
+            "mrp": 360,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 360,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/WHYnwmTOWfOz.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/W0ddzTWI7XVC.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/18CxWdoJxrua.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "heart-chain-bracelet",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "d094714730724b662a4fdf8af2a5a9ce"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "c1d0d8bdd214b948317632f9ce71ccea"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-27T16:22:12.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 360,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-27T16:22:12.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f2e"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21eee",
+            "title": "lock crystal pendant",
+            "description": "Silver plated",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 249,
+            "discount": 50,
+            "discountPercent": 17,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/u5oztFjzTQUS.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/VYAEtJtpMtX7.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "lock-crystal-pendant",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "e0439ca62799994827d70e8cd4701a2f"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-23T18:23:07.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-23T18:23:07.000Z",
+            "updatedAt": "2026-06-01T14:11:42.155Z",
+            "id": "6a1d931ee6bd3a5961e21eee"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ee5",
+            "title": "Dainty brick crystal pendant",
+            "description": "Silver plated chain",
+            "mrp": 249,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 249,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/EBtrNFp6IAEm.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/vqDp4hANqHet.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/jtd7yPKeGrrI.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "dainty-brick-crystal-pendant",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "4d02e60be734ab39865c8a1318971f00"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-23T18:21:28.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 249,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-23T18:21:28.000Z",
+            "updatedAt": "2026-06-01T14:11:41.778Z",
+            "id": "6a1d931de6bd3a5961e21ee5"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f36",
+            "title": "Crystal bear",
+            "description": "Silver plated <br>Anti tarnish waterproof and hypoallergenic ",
+            "mrp": 349,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 349,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ooLJ9NeuKgko.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ZxYAKVYuBZ5O.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/pKtWfTRn7uSK.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/5IpMX4031zE6.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/L9iYtX6zXTGF.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "crystal-bear",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "16963eadce02afa4e072a395be3ffb0e"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-23T16:04:52.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 349,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-23T16:04:52.000Z",
+            "updatedAt": "2026-06-01T14:11:43.536Z",
+            "id": "6a1d931fe6bd3a5961e21f36"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f33",
+            "title": "platinum plated hand band",
+            "description": "Platinum plated hand band",
+            "mrp": 999,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 7,
+            "discountedPrice": 999,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/SHuNHiXYuezE.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/8GTJJgm7Vmi8.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ptVjldJqjJAp.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "platinum-plated-hand-band",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "a7edc9dfd51b13ea8d46f2d03254ceaf"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "b4d43193e360f3d6fb65de2c87cf6815"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-23T15:41:53.000Z",
+                    "customAttributes": [
+                        {
+                            "attributeType": "text",
+                            "required": true,
+                            "name": "which",
+                            "id": "7a580623947b8e8f236a58380ef51494"
+                        }
+                    ]
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 999,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-23T15:41:53.000Z",
+            "updatedAt": "2026-06-01T14:11:43.536Z",
+            "id": "6a1d931fe6bd3a5961e21f33"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ec3",
+            "title": "Pond  earring ",
+            "description": "Anti tarnish waterproof hypoallergenic <br>18k gold plated ",
+            "mrp": 349,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 349,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/LNRmR7MvCyTb.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/oThgyNi354YF.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/3oJs3ZdPEXyR.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "pond-earring",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "529203a499b6d39e15aad76507637e50"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-22T16:50:40.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 349,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-22T16:50:40.000Z",
+            "updatedAt": "2026-06-01T14:11:41.073Z",
+            "id": "6a1d931de6bd3a5961e21ec3"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f30",
+            "title": "Gold drop earring",
+            "description": "Anti tarnish waterproof and hypoallergenic <br>18k gold plated ",
+            "mrp": 399,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 399,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/4Naq8IniIwS0.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/wkbVLVFpWTQk.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "gold-drop-earring",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "a961c275e430284107283177511ac2db"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-22T16:48:33.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 399,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-22T16:48:33.000Z",
+            "updatedAt": "2026-06-01T14:11:43.536Z",
+            "id": "6a1d931fe6bd3a5961e21f30"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21ef2",
+            "title": "Bossy earring",
+            "description": "Anti tarnish waterproof hypoallergenic <br>18k gold plated",
+            "mrp": 199,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 199,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/9aEIG2TdTjUc.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/xBOso13884lP.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/CVpYMViO6cE6.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "bossy-earring",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "587614f4bcd08434afd4eca7067b04b0"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-22T16:47:42.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 199,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-22T16:47:42.000Z",
+            "updatedAt": "2026-06-01T14:11:42.154Z",
+            "id": "6a1d931ee6bd3a5961e21ef2"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f23",
+            "title": "Double side clover pendant",
+            "description": "Front has black clover and back had white clove<br>Two in one clover pendant anti tarnish waterproof and hypoallergenic <br>Gold plated ",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/d16u56oqIR5f.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/BckhAXkgTx7b.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/2ycyUyRYhyID.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/o2mkMok85nIT.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/iPEq3mQstehC.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "double-side-clove-pendant",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "550b4d02389b76f6fae11a54ac36b1d3"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-22T16:38:00.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-22T16:38:00.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f23"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ee3",
+            "title": "Manifest heart pendant",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated ",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/j3DAJmywIJgB.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/YvD5Tkj333HF.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/11pXXs5oZiFX.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "manifest-heart-pendant",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "22c7cbd3554a7f3edb1df3c4ec0d7ef2"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-22T16:33:37.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-22T16:33:37.000Z",
+            "updatedAt": "2026-06-01T14:11:41.779Z",
+            "id": "6a1d931de6bd3a5961e21ee3"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ed3",
+            "title": "Mine heart",
+            "description": "Anti tarnish waterproof hypoallergenic <br>Gold plated ",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ldGAJoNiv3tz.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/YFs7GUv2OQdD.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/sEUkGQlgb8mr.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "mine-heart",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "c7d92cfae35812fa65b4c3403a32e30d"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-22T15:27:27.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-22T15:27:27.000Z",
+            "updatedAt": "2026-06-01T14:11:41.779Z",
+            "id": "6a1d931de6bd3a5961e21ed3"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21ef7",
+            "title": "Comrade star pendant ",
+            "description": "Anti tarnish, waterproof and hypoallergenic <br>Gold plated",
+            "mrp": 330,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 330,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/dfIwzlDnwuNW.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/puqlPldB0rQX.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/rFlslFPmpD9P.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "comrade-star-pendant",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "425f162187c8101d0ec01f45b7a11edc"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-22T09:41:40.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 330,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-22T09:41:40.000Z",
+            "updatedAt": "2026-06-01T14:11:42.155Z",
+            "id": "6a1d931ee6bd3a5961e21ef7"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21eeb",
+            "title": "Spray miniature lux chain gold",
+            "description": "Unisex chain gold plated<br>Anti tarnish,waterproof and hypoallergenic ",
+            "mrp": 399,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 399,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/O7puwax71ist.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/5dRaV12X9yvW.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/MMskGdQAn5uL.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "spray-miniature-lux-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "84a97b2945c617f7f2ad7076225d6bc4"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "b4d43193e360f3d6fb65de2c87cf6815",
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-22T08:23:30.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 399,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-22T08:23:30.000Z",
+            "updatedAt": "2026-06-01T14:11:42.155Z",
+            "id": "6a1d931ee6bd3a5961e21eeb"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f32",
+            "title": "shining phone charm pair",
+            "description": "Pair phone charm <br>If you want to select 2 different charms just <br>dm on instagram ",
+            "mrp": 149,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 149,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/lFYZNOatKG3H.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/Oj0scebEPjCf.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/fnC4gcYJw3EU.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/QkXZWnndWTdB.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "shining-phone-charm-pair",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "143b5fff15ec7b9f888cea72ddb27ffd"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "d7177b55656afa7fd91be513b2596874"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T15:04:54.000Z",
+                    "customAttributes": [
+                        {
+                            "attributeType": "text",
+                            "required": true,
+                            "name": "mention which one ",
+                            "id": "297e7fec5813086e8a0602ddc1878629"
+                        }
+                    ]
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 149,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T15:04:54.000Z",
+            "updatedAt": "2026-06-01T14:11:43.536Z",
+            "id": "6a1d931fe6bd3a5961e21f32"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f38",
+            "title": "Cute 3D phone charm pair",
+            "description": "Pair phone charm <br>If you want to select 2 different charms just dm on instagram ",
+            "mrp": 99,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 99,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/3YINbGgpUAQc.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/uctfZmwAsfZa.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/X9HHfEJG0nEc.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "cute-3d-phone-charm-pair",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "8f66cd6203feb160de7357e7ab1c0490"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "d7177b55656afa7fd91be513b2596874"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T14:59:56.000Z",
+                    "customAttributes": [
+                        {
+                            "attributeType": "text",
+                            "required": true,
+                            "name": "Mention which one",
+                            "id": "a70ef99e46fa5b2c15fde3e962b3dcb6"
+                        }
+                    ]
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 99,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T14:59:56.000Z",
+            "updatedAt": "2026-06-01T14:11:43.863Z",
+            "id": "6a1d931fe6bd3a5961e21f38"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f37",
+            "title": "Phone charm pair",
+            "description": "Pair phone charm <br>If you want to select 2 different charms just <br>dm on instagram ",
+            "mrp": 99,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 99,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/TuKNM0gB6odo.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/YCPuFJ3htvSC.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/w97jmo3BngzO.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/zyaQGrbDUjFd.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/zhCKirKnI0nA.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/KOj3BzKZ2UPx.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/gdZaDgAiQUqZ.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "phone-charm-pair",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "e293115a5e42585bed6426ca24261817"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "d7177b55656afa7fd91be513b2596874"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T14:53:49.000Z",
+                    "customAttributes": [
+                        {
+                            "attributeType": "text",
+                            "required": true,
+                            "name": "mention which one ",
+                            "id": "297e7fec5813086e8a0602ddc1878629"
+                        }
+                    ]
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 99,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T14:53:49.000Z",
+            "updatedAt": "2026-06-01T14:11:43.863Z",
+            "id": "6a1d931fe6bd3a5961e21f37"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21ef0",
+            "title": "Glittering heart chain",
+            "description": "Anti tarnish, waterproof, hypoallergenic <br>Gold plated ",
+            "mrp": 360,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 360,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/k5Awh0fWwVSI.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/WhVIdu6DGOcM.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "glittering-heart-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "524bcc38ce233eb57fa036d29dc868eb"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T14:32:02.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 360,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T14:32:02.000Z",
+            "updatedAt": "2026-06-01T14:11:42.155Z",
+            "id": "6a1d931ee6bd3a5961e21ef0"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f25",
+            "title": "crystal charm necklace",
+            "description": "Anti tarnish, waterproof, hypoallergenic <br>Gold plated ",
+            "mrp": 549,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 549,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/bncdSypbTEu0.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/HwNOiQ1vNNOO.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/57F4rEyQaMNh.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "crystal-charm-necklace",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "534f5c12372ba4c4e61236a71da69d55"
+                },
+                "dm2buy": {
+                    "collections": [],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T14:29:42.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 549,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T14:29:42.000Z",
+            "updatedAt": "2026-06-01T14:11:43.536Z",
+            "id": "6a1d931fe6bd3a5961e21f25"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21f00",
+            "title": "Forest drop chain",
+            "description": "Anti tarnish, waterproof, hypoallergenic <br>Gold plated ",
+            "mrp": 399,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 399,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/a2KKFgOz5cUo.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/87vTLm3X5i7u.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "forest-drop-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "2d11fa0f2b9399aa0bd71fb819d8bb54"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T14:14:36.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 399,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T14:14:36.000Z",
+            "updatedAt": "2026-06-01T14:11:42.693Z",
+            "id": "6a1d931ee6bd3a5961e21f00"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21ee9",
+            "title": "crystal drop hasli",
+            "description": "<p>Anti tarnish, waterproof, hypoallergenic </p><p>Gold plated</p>",
+            "mrp": 449,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 400,
+            "discount": 49,
+            "discountPercent": 11,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/rE6BjgH1hxkF.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/0vgVwHMM7adW.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/UCrCLDtX8nVw.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/zDVfx92K0zOA.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "crystal-drop-hasli",
+            "config": {},
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 449,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T14:06:06.000Z",
+            "updatedAt": "2026-06-19T07:04:33.774Z",
+            "deliveryCharge": 0,
+            "id": "6a1d931ee6bd3a5961e21ee9"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ed8",
+            "title": "sun spell chain",
+            "description": "Anti tarnish, waterproof, hypoallergenic <br>Gold plated",
+            "mrp": 275,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 275,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/voZXYXAZbOur.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ABAEC1z1Jv9E.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/PNdphePW2uQS.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "sun-spell-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "b7d0493cc0d110b273db85585db4d75c"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T13:54:43.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 275,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T13:54:43.000Z",
+            "updatedAt": "2026-06-01T14:11:41.778Z",
+            "id": "6a1d931de6bd3a5961e21ed8"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ee2",
+            "title": "Delicate diamond chain",
+            "description": "Anti tarnish, waterproof, hypoallergenic <br>Gold plated",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/DqGAQ9VakwlB.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/hcO9FSlARsHu.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/0ZsVKW5JLL8X.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "delicate-diamond-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "a1120a16209686f0954408bdaa418664"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T07:06:07.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T07:06:07.000Z",
+            "updatedAt": "2026-06-01T14:11:41.779Z",
+            "id": "6a1d931de6bd3a5961e21ee2"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ee6",
+            "title": "Her heart pendant",
+            "description": "<p>Anti tarnish, waterproof, hypoallergenic </p><p>Gold plated</p>",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/RfMkQSmSIDRe.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/MNtw6RyCILEb.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "Her-heart-pendant",
+            "config": {},
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T06:58:50.000Z",
+            "updatedAt": "2026-06-13T06:00:22.574Z",
+            "deliveryCharge": 0,
+            "id": "6a1d931de6bd3a5961e21ee6"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21eef",
+            "title": "Heaven heart pendant ",
+            "description": "Anti tarnish, waterproof, hypoallergenic <br>18k gold plated",
+            "mrp": 299,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 299,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/dLkmbeLLl57o.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/sDoOHjuOYfue.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ps7D4rtdbJSn.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/zeM3hXc6z9NG.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "heaven-heart-pendant",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "0a9492b0bf888fae2c127a6031c15192"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T06:57:12.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 299,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T06:57:12.000Z",
+            "updatedAt": "2026-06-01T14:11:42.154Z",
+            "id": "6a1d931ee6bd3a5961e21eef"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f34",
+            "title": "Floating heart chain",
+            "description": "Anti tarnish, waterproof, hypoallergenic <br>Gold plated",
+            "mrp": 369,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 369,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/jX3vbV1nH8Am.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/yh8NcnT13DGk.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/sutNv5gFrzab.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "floating-heart-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "6a69709bc9821a0834992ba2118053eb"
+                },
+                "dm2buy": {
+                    "collections": [],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T06:53:55.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 369,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T06:53:55.000Z",
+            "updatedAt": "2026-06-01T14:11:43.535Z",
+            "id": "6a1d931fe6bd3a5961e21f34"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f27",
+            "title": "Bow chain",
+            "description": "Anti tarnish, waterproof, hypoallergenic <br>Gold plated",
+            "mrp": 330,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 330,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/emyOHsenl0AL.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/UQiGTniA7Paw.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ZHMQmtPdV5UN.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "bow-chain-8add7622",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "8add76220fca4b346994684735544f63"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T06:51:10.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 330,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T06:51:10.000Z",
+            "updatedAt": "2026-06-01T14:11:43.534Z",
+            "id": "6a1d931fe6bd3a5961e21f27"
+        },
+        {
+            "_id": "6a1d931fe6bd3a5961e21f1c",
+            "title": "Immortal rose pendant ",
+            "description": "Anti tarnish, waterproof, hypoallergenic <br>Gold plated",
+            "mrp": 349,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 349,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/D64GfXsF599V.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/AgjGpwehSeYh.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "immortal-rose-pendant",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "d049e052d9a2748a1047e3b3fbe85286"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T06:49:01.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 349,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T06:49:01.000Z",
+            "updatedAt": "2026-06-01T14:11:43.089Z",
+            "id": "6a1d931fe6bd3a5961e21f1c"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21edb",
+            "title": "manifest chain",
+            "description": "Anti tarnish waterproof and hypoallergenic <br>Gold plated",
+            "mrp": 280,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 280,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/ClxrjFWgjFiz.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/8SuXE9nSAI7P.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/yxH8dI4KauvU.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/aNSEZnjcsHru.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "manifest-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "e719adcb4eb9264f9d97ea7f9e713d2c"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T06:46:17.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 280,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T06:46:17.000Z",
+            "updatedAt": "2026-06-01T14:11:41.779Z",
+            "id": "6a1d931de6bd3a5961e21edb"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21eec",
+            "title": "Gold snake chain",
+            "description": "Anti tarnish, waterproof, hypoallergenic <br>Gold plated",
+            "mrp": 199,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 4,
+            "discountedPrice": 199,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/dlxXAKLcQXOF.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/4WyfmxP1WIld.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "gold-snake-chain",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "bcd02a7434de7c01ba7d5961134cf290"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "ddeb74d60522296ba2cfec16f79551bb",
+                        "b4d43193e360f3d6fb65de2c87cf6815"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T06:43:55.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 199,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T06:43:55.000Z",
+            "updatedAt": "2026-06-01T14:11:42.155Z",
+            "id": "6a1d931ee6bd3a5961e21eec"
+        },
+        {
+            "_id": "6a1d931ee6bd3a5961e21ef5",
+            "title": "Drop dainty bracelet",
+            "description": "Anti tarnish, waterproof, hypoallergenic <br>Gold plated",
+            "mrp": 280,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 1,
+            "discountedPrice": 280,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/VCKiwkvqecPd.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/LU9Q5feYegCj.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "drop-dainty-bracelet",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "967e5646625a42b8e838ee4410c8aa4f"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "c1d0d8bdd214b948317632f9ce71ccea",
+                        "9e353bcdf0dd29c8b14b42caf59a5798"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-20T06:20:42.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 280,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-20T06:20:42.000Z",
+            "updatedAt": "2026-06-01T14:11:42.155Z",
+            "id": "6a1d931ee6bd3a5961e21ef5"
+        },
+        {
+            "_id": "6a1d931de6bd3a5961e21ecc",
+            "title": "love dangler",
+            "description": "<b>18k gold plated </b><br><b>Anti tarnish hypoallergenic waterproof love dangler </b>",
+            "mrp": 379,
+            "lifetimeSold": 0,
+            "weightedScore": 0,
+            "stock": 0,
+            "discountedPrice": 379,
+            "discount": 0,
+            "discountPercent": 0,
+            "images": [
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/r2GADEtZrFxv.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/5faWWmocvUiX.jpg",
+                "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/Su54UayYtE27.jpg"
+            ],
+            "entityId": 2763,
+            "slug": "love-dangler",
+            "config": {
+                "syncSource": {
+                    "platform": "dm2buy",
+                    "storeId": "c23875aba6e27bf9517486111ebd8414",
+                    "productId": "1bbc0df8489f991736f9377360f4da03"
+                },
+                "dm2buy": {
+                    "collections": [
+                        "5837f6dfdf3ea447745778770a890e77"
+                    ],
+                    "isFeatured": false,
+                    "publishAt": "2025-07-02T15:32:30.000Z",
+                    "customAttributes": []
+                }
+            },
+            "status": "active",
+            "visibility": "public",
+            "minOrderQty": 1,
+            "hasVariants": false,
+            "minVariantPrice": 379,
+            "attributes": null,
+            "variantOptions": null,
+            "variants": null,
+            "createdAt": "2025-07-02T15:32:30.000Z",
+            "updatedAt": "2026-06-01T14:11:41.073Z",
+            "id": "6a1d931de6bd3a5961e21ecc"
+        }
+    ],
+    "meta": {
+        "total": 292,
+        "page": 3,
+        "limit": 100,
+        "totalPages": 3,
+        "hasNext": false,
+        "hasPrev": true
+    }
+}
