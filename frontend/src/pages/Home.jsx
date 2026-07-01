@@ -1,43 +1,112 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { api } from "@/lib/api";
 import ProductCard from "@/components/ProductCard";
 import ShopTheLook from "@/components/ShopTheLook";
+
+const FALLBACK_BANNERS = [
+  {
+    id: "fallback-1",
+    title: "The Heirloom Edit",
+    subtitle: "Handcrafted • Heirloom",
+    image: "https://images.pexels.com/photos/7632901/pexels-photo-7632901.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    link: "/shop",
+  },
+];
+
+const INTERVAL = 5000;
 
 const Home = () => {
   const [featured, setFeatured] = useState([]);
   const [bestsellers, setBestsellers] = useState([]);
   const [cats, setCats] = useState([]);
-  const [banner, setBanner] = useState(null);
+  const [banners, setBanners] = useState(FALLBACK_BANNERS);
+  const [current, setCurrent] = useState(0);
+  const [animating, setAnimating] = useState(false);
+  const paused = useRef(false);
+  const timerRef = useRef(null);
 
   useEffect(() => {
     api.get("/products?featured=true&limit=8").then((r) => setFeatured(r.data));
     api.get("/products?bestseller=true&limit=8").then((r) => setBestsellers(r.data));
     api.get("/categories").then((r) => setCats(r.data));
-    api.get("/banners").then((r) => setBanner((r.data || []).find((b) => b.active)));
+    api.get("/banners").then((r) => {
+      const active = (r.data || []).filter((b) => b.active);
+      if (active.length) setBanners(active);
+    });
   }, []);
+
+  const goTo = useCallback((idx) => {
+    setAnimating(true);
+    setTimeout(() => {
+      setCurrent(idx);
+      setAnimating(false);
+    }, 150);
+  }, []);
+
+  const next = useCallback(() => {
+    goTo((current + 1) % banners.length);
+  }, [current, banners.length, goTo]);
+
+  const prev = useCallback(() => {
+    goTo((current - 1 + banners.length) % banners.length);
+  }, [current, banners.length, goTo]);
+
+  useEffect(() => {
+    if (banners.length <= 1) return;
+    const tick = () => {
+      if (!paused.current) next();
+    };
+    timerRef.current = setInterval(tick, INTERVAL);
+    return () => clearInterval(timerRef.current);
+  }, [banners.length, next]);
+
+  const b = banners[current] || banners[0];
 
   return (
     <div data-testid="home-page">
-      {/* Hero */}
-      <section className="relative h-[88vh] min-h-[600px] overflow-hidden">
-        <img
-          src={banner?.image || "https://images.pexels.com/photos/7632901/pexels-photo-7632901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1600"}
-          alt="hero"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative h-full max-w-7xl mx-auto px-6 sm:px-12 flex items-center">
-          <div className="text-[#FAF8F5] max-w-xl fade-up">
-            <p className="uppercase tracking-[0.3em] text-xs mb-5">{banner?.subtitle || "Handcrafted • Heirloom"}</p>
+      {/* Hero Carousel */}
+      <section
+        className="relative h-[88vh] min-h-[600px] overflow-hidden"
+        onMouseEnter={() => { paused.current = true; }}
+        onMouseLeave={() => { paused.current = false; }}
+      >
+        {/* Slides — crossfade stack */}
+        {banners.map((slide, i) => (
+          <div
+            key={slide.id}
+            className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+            style={{ opacity: i === current ? 1 : 0, zIndex: i === current ? 1 : 0 }}
+          >
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[8000ms] ease-linear ${
+                i === current ? "scale-110" : "scale-100"
+              }`}
+            />
+            <div className="absolute inset-0 bg-black/35" />
+          </div>
+        ))}
+
+        {/* Text content */}
+        <div className="relative h-full max-w-7xl mx-auto px-6 sm:px-12 flex items-center" style={{ zIndex: 2 }}>
+          <div
+            key={current}
+            className={`text-[#FAF8F5] max-w-xl transition-all duration-500 ${
+              animating ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
+            }`}
+          >
+            <p className="uppercase tracking-[0.3em] text-xs mb-5">{b.subtitle || "Handcrafted • Heirloom"}</p>
             <h1 className="font-serif-pipa text-5xl sm:text-7xl leading-[1.05] tracking-tight">
-              {banner?.title || "The Heirloom Edit"}
+              {b.title || "The Heirloom Edit"}
             </h1>
             <p className="mt-6 max-w-md text-[#E8D8CE] leading-relaxed">
               Pieces designed to be passed down. Discover Pipa's latest collection of artisanal jewellery, made by hand in small batches.
             </p>
             <Link
-              to="/shop"
+              to={b.link || "/shop"}
               data-testid="hero-cta"
               className="inline-block mt-10 bg-[#FAF8F5] text-[#1A1A1A] px-10 py-4 text-xs uppercase tracking-[0.25em] hover:bg-[#B45F45] hover:text-white transition-colors"
             >
@@ -45,6 +114,51 @@ const Home = () => {
             </Link>
           </div>
         </div>
+
+        {/* Arrows */}
+        {banners.length > 1 && (
+          <>
+            <button
+              onClick={prev}
+              aria-label="Previous banner"
+              className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/15 hover:bg-white/35 backdrop-blur-sm flex items-center justify-center text-white transition-colors"
+            >
+              <ChevronLeft size={20} />
+            </button>
+            <button
+              onClick={next}
+              aria-label="Next banner"
+              className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/15 hover:bg-white/35 backdrop-blur-sm flex items-center justify-center text-white transition-colors"
+            >
+              <ChevronRight size={20} />
+            </button>
+          </>
+        )}
+
+        {/* Dot indicators + progress bar */}
+        {banners.length > 1 && (
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2">
+            {banners.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => goTo(i)}
+                aria-label={`Go to slide ${i + 1}`}
+                className={`transition-all duration-300 rounded-full ${
+                  i === current
+                    ? "w-8 h-2 bg-white"
+                    : "w-2 h-2 bg-white/50 hover:bg-white/80"
+                }`}
+              />
+            ))}
+          </div>
+        )}
+
+        {/* Slide counter */}
+        {banners.length > 1 && (
+          <div className="absolute bottom-8 right-8 z-10 text-white/60 text-xs tracking-widest font-light">
+            {String(current + 1).padStart(2, "0")} / {String(banners.length).padStart(2, "0")}
+          </div>
+        )}
       </section>
 
       {/* Categories */}

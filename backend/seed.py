@@ -23,11 +23,15 @@ async def seed():
 
     if await db.categories.count_documents({}) == 0:
         cats = [
-            ("Earrings",  "earrings",  "https://images.pexels.com/photos/5413313/pexels-photo-5413313.jpeg?auto=compress&cs=tinysrgb&w=800"),
-            ("Necklaces", "necklaces", "https://images.pexels.com/photos/13924051/pexels-photo-13924051.jpeg?auto=compress&cs=tinysrgb&w=800"),
-            ("Rings",     "rings",     "https://images.pexels.com/photos/7248760/pexels-photo-7248760.jpeg?auto=compress&cs=tinysrgb&w=800"),
-            ("Bangles",   "bangles",   "https://images.pexels.com/photos/4004225/pexels-photo-4004225.jpeg?auto=compress&cs=tinysrgb&w=800"),
-            ("Bridal",    "bridal",    "https://images.pexels.com/photos/33209522/pexels-photo-33209522.jpeg?auto=compress&cs=tinysrgb&w=800"),
+            ("Earrings",    "earrings",    "https://images.pexels.com/photos/5413313/pexels-photo-5413313.jpeg?auto=compress&cs=tinysrgb&w=800"),
+            ("Necklaces",   "necklaces",   "https://images.pexels.com/photos/13924051/pexels-photo-13924051.jpeg?auto=compress&cs=tinysrgb&w=800"),
+            ("Rings",       "rings",       "https://images.pexels.com/photos/7248760/pexels-photo-7248760.jpeg?auto=compress&cs=tinysrgb&w=800"),
+            ("Bangles",     "bangles",     "https://images.pexels.com/photos/4004225/pexels-photo-4004225.jpeg?auto=compress&cs=tinysrgb&w=800"),
+            ("Bridal",      "bridal",      "https://images.pexels.com/photos/33209522/pexels-photo-33209522.jpeg?auto=compress&cs=tinysrgb&w=800"),
+            ("Anklets",     "anklets",     "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/V0skzCGZZcbk.jpg"),
+            ("Bracelets",   "bracelets",   "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/r7MoZsMsVpUm.jpg"),
+            ("Accessories", "accessories", "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/U1fXvnBRcqUc.jpg"),
+            ("Sets",        "sets",        "https://dm2buy-aqbqh9cwb5cwb9he.z02.azurefd.net/dm2buy/yofc5dtMBJwy.jpg"),
         ]
         await db.categories.insert_many([
             {"id": new_id(), "name": n, "slug": s, "image": img,
@@ -69,12 +73,12 @@ async def seed():
         ])
 
     if await db.banners.count_documents({}) == 0:
-        await db.banners.insert_one({
-            "id": new_id(), "title": "The Heirloom Edit",
-            "subtitle": "Crafted by hand, worn for generations",
-            "image": "https://images.pexels.com/photos/7632901/pexels-photo-7632901.jpeg?auto=compress&cs=tinysrgb&w=1200",
-            "link": "/shop", "active": True, "created_at": now(),
-        })
+        await db.banners.insert_many([
+            {"id": new_id(), "title": "The Heirloom Edit",       "subtitle": "Crafted by hand, worn for generations",  "image": "https://images.pexels.com/photos/7632901/pexels-photo-7632901.jpeg?auto=compress&cs=tinysrgb&w=1600",  "link": "/shop",         "active": True, "created_at": now()},
+            {"id": new_id(), "title": "New Arrivals",             "subtitle": "Fresh from our artisans",               "image": "https://images.pexels.com/photos/5413313/pexels-photo-5413313.jpeg?auto=compress&cs=tinysrgb&w=1600",  "link": "/shop",         "active": True, "created_at": now()},
+            {"id": new_id(), "title": "Gift The Extraordinary",   "subtitle": "For the ones you cherish",              "image": "https://images.pexels.com/photos/9293538/pexels-photo-9293538.jpeg?auto=compress&cs=tinysrgb&w=1600",  "link": "/shop",         "active": True, "created_at": now()},
+            {"id": new_id(), "title": "Bridal Essentials",        "subtitle": "Your perfect day, adorned",             "image": "https://images.pexels.com/photos/33209522/pexels-photo-33209522.jpeg?auto=compress&cs=tinysrgb&w=1600", "link": "/shop/bridal",  "active": True, "created_at": now()},
+        ])
 
     if await db.coupons.count_documents({}) == 0:
         await db.coupons.insert_many([
