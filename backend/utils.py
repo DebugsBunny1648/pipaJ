@@ -1,3 +1,4 @@
+import asyncio
 import uuid
 import requests
 from datetime import datetime, timezone
@@ -15,7 +16,7 @@ def strip_id(doc: dict) -> dict:
     doc.pop("_id", None)
     return doc
 
-def send_email(to: str, subject: str, html: str) -> None:
+def _send_email_sync(to: str, subject: str, html: str) -> None:
     if not RESEND_KEY:
         log.info("[EMAIL DEV] to=%s subject=%s", to, subject)
         return
@@ -31,11 +32,14 @@ def send_email(to: str, subject: str, html: str) -> None:
     except Exception as e:
         log.warning("Resend error: %s", e)
 
-def order_email(order: dict, heading: str) -> str:
+async def send_email(to: str, subject: str, html: str) -> None:
+    await asyncio.to_thread(_send_email_sync, to, subject, html)
+
+def order_email(order: dict, heading: str = "Order Confirmed") -> str:
     rows = "".join(
         f"<tr>"
         f"<td style='padding:8px;border-bottom:1px solid #eee'>{it['name']} × {it['quantity']}</td>"
-        f"<td style='padding:8px;border-bottom:1px solid #eee;text-align:right'>₹{it['subtotal']:.0f}</td>"
+        f"<td style='padding:8px;border-bottom:1px solid #eee;text-align:right'>₹{it.get('total', it.get('subtotal', 0)):.0f}</td>"
         f"</tr>"
         for it in order.get("items", [])
     )

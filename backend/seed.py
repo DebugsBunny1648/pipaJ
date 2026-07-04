@@ -5,8 +5,15 @@ from utils import now, new_id
 
 
 async def seed():
+    # Core uniqueness indexes
     await db.users.create_index("email", unique=True)
     await db.products.create_index("id", unique=True)
+    await db.orders.create_index("id", unique=True)
+    await db.orders.create_index("user_id")
+    await db.orders.create_index("order_no")
+    await db.products.create_index("category")
+    await db.products.create_index([("price", 1)])
+    await db.coupons.create_index("code", unique=True)
 
     if not await db.users.find_one({"email": "admin@pipa.com"}):
         await db.users.insert_one({

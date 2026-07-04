@@ -55,11 +55,6 @@ const Login = () => {
       <p className="text-center text-sm text-[#4A4A4A] mt-6">
         New here? <Link to="/signup" className="text-[#B45F45] hover:underline">Create account</Link>
       </p>
-      <div className="mt-10 text-xs text-[#4A4A4A] bg-[#F3EFE9] p-4 border border-[#E5E0D8]">
-        <p className="font-medium mb-1">Demo Accounts:</p>
-        <p>Admin: admin@pipa.com / Admin@123</p>
-        <p>Customer: demo@pipa.com / Demo@123</p>
-      </div>
     </div>
   );
 };

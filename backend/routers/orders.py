@@ -97,7 +97,7 @@ async def create_order(body: OrderCreate, user=Depends(get_user)):
     await db.carts.update_one({"user_id": user["id"]}, {"$set": {"items": []}})
 
     try:
-        await send_email(user["email"], f"Order #{oid[:8].upper()} Confirmed", order_email(doc))
+        await send_email(user["email"], f"Order #{oid[:8].upper()} Confirmed", order_email(doc, "Order Confirmed"))
     except Exception as e:
         log.warning("Email send failed: %s", e)
 
